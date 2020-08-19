@@ -1,0 +1,123 @@
+What is a set?,Points - What is a set?,What is the syntax to create a set?,Points - What is the syntax to create a set?,What is the difference between the remove and discard methods on a set?,Points - What is the difference between the remove and discard methods on a set?,What is the alternate symbol for the intersection method?,Points - What is the alternate symbol for the intersection method?,What is the alternate symbol for the difference method?,Points - What is the alternate symbol for the difference method?,What is the difference between the difference and symmetric_difference methods?,Points - What is the difference between the difference and symmetric_difference methods?,What is the difference between the union and intersection methods?,Points - What is the difference between the union and intersection methods?,What is the alternate symbol for the symmetric_difference method?,Points - What is the alternate symbol for the symmetric_difference method?,What is the alternate symbol for the union method?,Points - What is the alternate symbol for the union method?,What does a frozenset offer that a regular set doesn’t?,Points - What does a frozenset offer that a regular set doesn抰?,Can a module have an attribute with the same name as the module? Try declaring a variable called calculator in calculator.py. Is calculator.calculator valid to use in main.py?,Points - Can a module have an attribute with the same name as the module? Try declaring a variable called calculator in calculator.py. Is calculator.calculator valid to use in main.py?,What is returned if you pass the imported calculator module into the type function?,Points - What is returned if you pass the imported calculator module into the type function?,What is returned when you pass the imported math module into the dir function?,Points - What is returned when you pass the imported math module into the dir function?,What is returned if you pass the imported calculator module into the dir function?,Points - What is returned if you pass the imported calculator module into the dir function?,What is the difference between a script and a module?,Points - What is the difference between a script and a module?,What is the Python standard library?,Points - What is the Python standard library?,What does the __name__ variable represent and what it is commonly used for?,Points - What does the __name__ variable represent and what it is commonly used for?,What keyword is used to assign as alias to an import? Provide an example.,Points - What keyword is used to assign as alias to an import? Provide an example.,"How is the ""from module import x"" syntax different from the regular import syntax?","Points - How is the ""from module import x"" syntax different from the regular import syntax?","Why might it be a bad idea to use ""from module import *"" syntax?","Points - Why might it be a bad idea to use ""from module import *"" syntax?",Why is it recommended to use the with context when reading or writing to a file?,Points - Why is it recommended to use the with context when reading or writing to a file?,What does the second argument to the open function represent? What are the available options?,Points - What does the second argument to the open function represent? What are the available options?,"What’s the difference between the ""w"" and ""a"" arguments for the open function's processing mode?","Points – What’s the difference between the ""w"" and ""a"" arguments for the open function's processing mode?","What will Python do when given a ""w"" mode and a write method command with a file that does not exist?","Points - What will Python do when given a ""w"" mode and a write method command with a file that does not exist?",What type of exception is raised if Python is unable to find the requested file?,Points - What type of exception is raised if Python is unable to find the requested file?,What is a higher order function?,Points - What is a higher order function?,"What is wrong with the code below? My calculate invocation is not printing out 50.
+
+
+
+def multiply(a, b):
+
+  return a * b
+
+
+
+def divide(a, b):
+
+  return a / b
+
+
+
+def calculate(func, a, b):
+
+  func...","Points - What is wrong with the code below? My calculate invocation is not printing out 50.
+
+
+
+def multiply(a, b):
+
+  return a * b
+
+
+
+def divide(a, b):
+
+  return a / b
+
+
+
+def calculate(func, a, b):
+
+  func...",What does the acronym LEGB stand for?,Points - What does the acronym LEGB stand for?,What is the difference between a local variable and a global variable?,Points - What is the difference between a local variable and a global variable?,What is a closure?,Points - What is a closure?,"Why will the following code raise a NameError?
+
+
+
+def a():
+
+  def b():
+
+    def c():
+
+      return val
+
+    return c()
+
+  return b()
+
+
+
+print(a())
+
+val = ""Hello""","Points - Why will the following code raise a NameError?
+
+
+
+def a():
+
+  def b():
+
+    def c():
+
+      return val
+
+    return c()
+
+  return b()
+
+
+
+print(a())
+
+val = ""Hello""",What Python keyword can you use in front of a variable inside a function to make it reference a variable of the same name defined in the module?,Points - What Python keyword can you use in front of a variable inside a function to make it reference a variable of the same name defined in the module?,What is a decorator?,Points - What is a decorator?,Why should you define *args and / or **kwargs to a function that will wrap another?,Points - Why should you define *args and / or **kwargs to a function that will wrap another?,"Let’s say I've defined a time_it decorator. It will start a timer, then execute a function, then print out how long it took to run that function.
+
+
+
+I also have a complex_operation function define...","Points – Let’s say I've defined a time_it decorator. It will start a timer, then execute a function, then print out how long it took to run that function.
+
+
+
+I also have a complex_operation function define..."
+"A set is a mutable unordered data structure that does not allow duplication of its element or value. In  other word, they have a unique element. These element can only be immutable object such as integer,strings and tuples",2,"To create a set object, we use the syntax : set() which can be assign to a variable, and such variable is a set data type",2,"A remove method in set is use to delete element of a set , it raises a KeyError if the element to be deleted does not exist in the set while discard method also use to delete element of a set but will not raise any error if the element to be deleted does not exist rather it will move on",5,An alternative  for intersection method in a set is : & (the ampersand symbol),2,An alternative for difference method in a set is:   - (minus sign),2,The difference method will return a new set elements that exist in the set which the method is been called upon on but not  present in the other set being passed as argument of the method while the symmetric difference method will return a new set elements that are not common to both set the method is used on.,5,"The union method is used to combined elements of different sets together to form a new set while the intersection method will form a new set  entails of what is common in the different sets in action. That is, it form new set which contains what different sets which is been used on share in common.",4,An alternative for symmetric_difference method is :   ^  symbol.,2,"An alternative for union method in a set is : 
+"" | "" symbol",2,"A frozenset makes a set to be immutable (capable of not changing its element) which makes it to be different from the regular set which is mutable (I.e capable of changing its element).
+So it can be use as dictionary keys since a dictionary keys can only be immutable data type",3,"After declaring a variable called calculator in a script named calculator.py , when this script (calculator.py) is being imported as a module in another script called main.py. It gives the answer Yes,  that a module can have an attribute with the same name as its module.",3,"if an imported calculator modules is passed into type function, it returns the class it belong to which is class module.",2,"if an imported math modules is passed into dir function, it returns the all attribute inside the namespace math. ",2,"if an imported calculator modules is passed into dir function, it returns the all attribute inside the namespace calculator.",2,"A script is ( a python file ) the current file/module we are working on which we will execute our program directly from, while a module is a script that can be used inside a current script by importing it with the keyword import follow by the module name.",5,A python standard library is a collection of built in tools into a python programming language which can be used to accelerate the productivity of a programmer.,2,"The __name__is a special variable which is always present in every modules, it is used to determine whether a file being used as a script or as a module, if it's been used as a script, it will return __main__ but if it's been used as module, it will return the name of the module.",3,"The  keyword "" as "" is used to assign aliases to an import
+Example : import math as m
+# Where m is the aliases of math ",4,"The ""from module import x"" syntax is different from regular import syntax in the sense that, it is being specific about its importing. Its importing a particular attribute called x from the module for its usage. ",4,"It is not a good idea to import all the attributes of a module because it is not possible for someone to know all the attribute of a module, moreover doing this will occupy a lot of memory space on the computer because everything about that modules is being imported.",3," It is recommended to use with context when reading or writing to a file because, by using this keyword ,it comes with open and close attribute. With this, if an error is encountered in the code outside this with context. It will not affect the codes inside the with context. It will be independent of its own whenever its time for it to be executed.",3,"The second argument in the open function represents the processing mode, i.e the action to be performed on the file being opened. By default string ""r"" which means to read the file.
+Other available options are ""w"" and ""a"" which denote to write and append to a the file respectively.",4,"With ""w"" argument as second argument. It will allow us to overwrite an existing file if already created. But if the file is not found, it will automatically create a new file and write into it with the name used as the first argument in the open function while when ""a"" is used as the second argument, it will allow us to add into an existing file if already created but if the file is not found, it will also automatically create a new file and write into it. ",4,Python will automatically create a file with the name being specify as the first argument in the open function and allow us to write into it.,2,"If Python is unable to find the request file, python will raise an error known as FileNotFoundError.",2,A higher order function is a type of function that either accepts a function as it's argument or return a function as it's return value.,2,Because we are not returning anything for the calculate function. We only defined a function inside it instead of that function defined should be return value for the calculate function.,3,The LEGB means :  Local / Enclosing Functions/Global / Built-in ,2,"A local variable has its scope only inside the function in which it's being declared, outside this function, it's won't exist any longer while a global variable has its scope in the whole script we are working on, it can be reference to in any function to be used in the script , but cannot be access in another module(script)",4,A closure is a programming procedure or pattern in which a scope maintain in order to access an enclosing scope's name.,2,"Because the val (which is the return value for function c) declaration  was after the invocation of the higher order function a. So since programming follows steps, and it could not encounter the val variable before the invocation of the higher order function a , so a NameError will be raised . If the val declaration had come before the invocation of the function a , it won't have given any error.",3,"We make us of the ""global"" keyword in front of a variable to make it reference a variable of  the same name defined in the module.",2,A decorator are higher order function that both accept a function as it's argument and return another function as its output. The are use to enhance functionality of an existing function without altering the core ability of the function.,2,we define *arg and\ **kwarg to a function so that the decorated function can be use dynamically ( i.e can receive any numbers of argument either in position argument form (*arg) or keyword argument form (**kwarg) when a decorator is designed to receive an arguments .,3,"#The aim of this program is to use a decorator to acheive time taken for an action to take place.
+
+# We first import the time module from python standard library
+import time
+
+#Next, we defined the decorator function time_it taken a function fn as its argument
+def time_it(fn):
+# we defined an inner function that decorate our fn function
+def start():
+
+# we declared a variable timer1 to hold the time the function want to start executing
+timer1= time.perf_counter()
+# then we invoke the function for execution to take place
+fn()
+#  we declared another variable timer2 to hold the time the function stopped executing
+
+timer2=time.perf_counter()
+
+# we now print out the time taken for the action by subtracting the starting time(timer1) from the ending time(timer2) and leaving the value in 4 decimal places
+print(f""The time taken for the function to run is {timer2 - timer1 : 0.4f}"")
+
+# now, we return the function start for our decorator function time it.
+return start
+
+
+# now, calling the decorator function on another function to give more functionalities to the function (i.e calculating the time for it to be executed)
+@time_it
+def complex_operation():
+for i in range(100000):
+print(i)
+
+# invocation of the function 
+complex_operation()",3

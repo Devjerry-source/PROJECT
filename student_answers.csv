@@ -1,0 +1,1853 @@
+Total points,Full Name,Participant Identification Number,What is a set?,Points - What is a set?,What is the syntax to create a set?,Points - What is the syntax to create a set?,What is the difference between the remove and discard methods on a set?,Points - What is the difference between the remove and discard methods on a set?,What is the alternate symbol for the intersection method?,Points - What is the alternate symbol for the intersection method?,What is the alternate symbol for the difference method?,Points - What is the alternate symbol for the difference method?,What is the difference between the difference and symmetric_difference methods?,Points - What is the difference between the difference and symmetric_difference methods?,What is the difference between the union and intersection methods?,Points - What is the difference between the union and intersection methods?,What is the alternate symbol for the symmetric_difference method?,Points - What is the alternate symbol for the symmetric_difference method?,What is the alternate symbol for the union method?,Points - What is the alternate symbol for the union method?,What does a frozenset offer that a regular set doesn’t?,Points - What does a frozenset offer that a regular set doesn’t?,Can a module have an attribute with the same name as the module? Try declaring a variable called calculator in calculator.py. Is calculator.calculator valid to use in main.py?,Points - Can a module have an attribute with the same name as the module? Try declaring a variable called calculator in calculator.py. Is calculator.calculator valid to use in main.py?,What is returned if you pass the imported calculator module into the type function?,Points - What is returned if you pass the imported calculator module into the type function?,What is returned when you pass the imported math module into the dir function?,Points - What is returned when you pass the imported math module into the dir function?,What is returned if you pass the imported calculator module into the dir function?,Points - What is returned if you pass the imported calculator module into the dir function?,What is the difference between a script and a module?,Points - What is the difference between a script and a module?,What is the Python standard library?,Points - What is the Python standard library?,What does the __name__ variable represent and what it is commonly used for?,Points - What does the __name__ variable represent and what it is commonly used for?,What keyword is used to assign as alias to an import? Provide an example.,Points - What keyword is used to assign as alias to an import? Provide an example.,"How is the ""from module import x"" syntax different from the regular import syntax?","Points - How is the ""from module import x"" syntax different from the regular import syntax?","Why might it be a bad idea to use ""from module import *"" syntax?","Points - Why might it be a bad idea to use ""from module import *"" syntax?",Why is it recommended to use the with context when reading or writing to a file?,Points - Why is it recommended to use the with context when reading or writing to a file?,What does the second argument to the open function represent? What are the available options?,Points - What does the second argument to the open function represent? What are the available options?,"What’s the difference between the ""w"" and ""a"" arguments for the open function's processing mode?","Points - What’s the difference between the ""w"" and ""a"" arguments for the open function's processing mode?","What will Python do when given a ""w"" mode and a write method command with a file that does not exist?","Points - What will Python do when given a ""w"" mode and a write method command with a file that does not exist?",What type of exception is raised if Python is unable to find the requested file?,Points - What type of exception is raised if Python is unable to find the requested file?,What is a higher order function?,Points - What is a higher order function?,"What is wrong with the code below? My calculate invocation is not printing out 50.
+
+
+
+def multiply(a, b):
+
+  return a * b
+
+
+
+def divide(a, b):
+
+  return a / b
+
+
+
+def calculate(func, a, b):
+
+  func...","Points - What is wrong with the code below? My calculate invocation is not printing out 50.
+
+
+
+def multiply(a, b):
+
+  return a * b
+
+
+
+def divide(a, b):
+
+  return a / b
+
+
+
+def calculate(func, a, b):
+
+  func...",What does the acronym LEGB stand for?,Points - What does the acronym LEGB stand for?,What is the difference between a local variable and a global variable?,Points - What is the difference between a local variable and a global variable?,What is a closure?,Points - What is a closure?,"Why will the following code raise a NameError?
+
+
+
+def a():
+
+  def b():
+
+    def c():
+
+      return val
+
+    return c()
+
+  return b()
+
+
+
+print(a())
+
+val = ""Hello""","Points - Why will the following code raise a NameError?
+
+
+
+def a():
+
+  def b():
+
+    def c():
+
+      return val
+
+    return c()
+
+  return b()
+
+
+
+print(a())
+
+val = ""Hello""",What Python keyword can you use in front of a variable inside a function to make it reference a variable of the same name defined in the module?,Points - What Python keyword can you use in front of a variable inside a function to make it reference a variable of the same name defined in the module?,What is a decorator?,Points - What is a decorator?,Why should you define *args and / or **kwargs to a function that will wrap another?,Points - Why should you define *args and / or **kwargs to a function that will wrap another?,"Let’s say I've defined a time_it decorator. It will start a timer, then execute a function, then print out how long it took to run that function.
+
+
+
+I also have a complex_operation function define...","Points - Let’s say I've defined a time_it decorator. It will start a timer, then execute a function, then print out how long it took to run that function.
+
+
+
+I also have a complex_operation function define..."
+91,Isaac Tochukwu Amunenwa,SNP_201098,A set is an mutable unordered sequence of data or values that is void of duplicate values.,2,"a = {1,2,3}
+for an empty set, we can invoke the function set()",2,The remove method raises a key error if the value inputted as it's parameter is not found while the discard method moves on without raising an error.,4,The ampersand symbol(&),2,The minus sign (-),2,"The difference method outputs the elements in a particular sets when elements similar to another set are remove.
+For example:
+set1 = {1,3,4,5}
+set2 = {1,2,5}
+print(set1.difference(set2)) outputs {3,4}
+
+The symmetric_difference outputs the  elements in either the two sets put not both. For example, print(set1.symmetric_difference(set2)) would output {2,3,4}.",4,The union method returns all the element of two or sets with no duplicate value while the intersection method returns the element that a similar in two or more sets..,4,The ^ symbol,2,The vertical pipe character (|),2,A frozenset is immutable therefore it can used as a key in a dictionary since a key in a dictionary can only accept immutable objects.,3,Yes it is.,3,A module.,2,A list of method that is linked to the math module,2,A list of method that is link to the calculator module including the calculator function,2,A script is a python program that is run directly as the main file without it being ran as an imported file while a module is python program that is usually that is usually imported and ran through other programs like script files.,4,A standard library is a library containing in-built functions and methods or collection of tools to enhance developers' productivity,2,Its a special variable or attribute that represent or store the name of a python program and it is commonly used to know if a python program being used as a script or module.,3,"The as keyword
+ie.  import datetime as dt",4,"The from module import * imports all object from module while other syntax such as from module import mode , import a specific attribute, in this context ""mode""..
+For example, 
+from math import * - This imports all the methods in the math module while from math import sqrt - imports only the sqrt() method.",3,It's bad because there could be some object with the same variable name in the main program and the module which was imported of which could lead to some issues.,3,In other to avoid issue with the close() method which could lead to a broken file or memory issues if not done well.,2,"The second argument in the open function take the processing MODE of the operation which could be ""r"" that is to read, ""w"", that is to write and ""a"", that is to append.",3,"The ""w"" argument completely overwrites a txt file if it was in existence before the operation while the ""a"" argument appends other text to the original file without overwriting it.",4,It will create the file.,2,A FileNotFound Error.,2,A higher order function is a function that either take a function as an argument or a return value.,2,"The 'return' keyword was omitted before the fun(a,b) in the calculate function",3,"Local, Enclosed Function, Global and Built-in.",2,"A local variable is a variable  that can only be  used in a block  where it was declared for example, in a function while a global variable is a variable that can be used anywhere in the program including functions etc...",4,"A closure is a programming pattern in which a scope retains access to an enclosing scope's name. For example, an outer function retaining the name of an inner scope even after it has been invoked.",2,val was not defined before the a() function was invoked.,3,The global keyword,2,A decorator is a function that take a function as an argument and returns a function as it's return value.,2,In other to allow the function receive any number of postional or keyword arguments.,3,"import functools
+
+def time_it(func):
+	""""""
+	Time it decorator that calculate the time a function takes to execute.
+	""""""
+	@functools.wraps(func)
+	def timer():
+		print(""The timer starts"")
+		func()
+		print(""The timer stops"")
+
+	return timer
+
+@time_it
+def complex_operation():
+	""""""
+	Prints out the number within the range of 1 to 100000.
+	Takes no argument
+	""""""
+	for i in range(1,100000):
+		print(i)
+
+or 
+
+print(time_it(complex_operation)())
+
+print(complex_operation())
+
+
+
+",0
+97,Monsuru Lawal,SNP_201129,"A set is a mutable unordered data structure that does not allow duplication of its element or value. In  other word, they have a unique element. These element can only be immutable object such as integer,strings and tuples",2,"To create a set object, we use the syntax : set() which can be assign to a variable, and such variable is a set data type",2,"A remove method in set is use to delete element of a set , it raises a KeyError if the element to be deleted does not exist in the set while discard method also use to delete element of a set but will not raise any error if the element to be deleted does not exist rather it will move on",4,An alternative  for intersection method in a set is : & (the ampersand symbol),2,An alternative for difference method in a set is:   - (minus sign),2,The difference method will return a new set elements that exist in the set which the method is been called upon on but not  present in the other set being passed as argument of the method while the symmetric difference method will return a new set elements that are not common to both set the method is used on.,4,"The union method is used to combined elements of different sets together to form a new set while the intersection method will form a new set  entails of what is common in the different sets in action. That is, it form new set which contains what different sets which is been used on share in common.",4,An alternative for symmetric_difference method is :   ^  symbol.,2,"An alternative for union method in a set is : 
+"" | "" symbol",2,"A frozenset makes a set to be immutable (capable of not changing its element) which makes it to be different from the regular set which is mutable (I.e capable of changing its element).
+So it can be use as dictionary keys since a dictionary keys can only be immutable data type",3,"After declaring a variable called calculator in a script named calculator.py , when this script (calculator.py) is being imported as a module in another script called main.py. It gives the answer Yes,  that a module can have an attribute with the same name as its module.",3,"if an imported calculator modules is passed into type function, it returns the class it belong to which is class module.",2,"if an imported math modules is passed into dir function, it returns the all attribute inside the namespace math. ",2,"if an imported calculator modules is passed into dir function, it returns the all attribute inside the namespace calculator.",2,"A script is ( a python file ) the current file/module we are working on which we will execute our program directly from, while a module is a script that can be used inside a current script by importing it with the keyword import follow by the module name.",4,A python standard library is a collection of built in tools into a python programming language which can be used to accelerate the productivity of a programmer.,2,"The __name__is a special variable which is always present in every modules, it is used to determine whether a file being used as a script or as a module, if it's been used as a script, it will return __main__ but if it's been used as module, it will return the name of the module.",3,"The  keyword "" as "" is used to assign aliases to an import
+Example : import math as m
+# Where m is the aliases of math ",4,"The ""from module import x"" syntax is different from regular import syntax in the sense that, it is being specific about its importing. Its importing a particular attribute called x from the module for its usage. ",4,"It is not a good idea to import all the attributes of a module because it is not possible for someone to know all the attribute of a module, moreover doing this will occupy a lot of memory space on the computer because everything about that modules is being imported.",3," It is recommended to use with context when reading or writing to a file because, by using this keyword ,it comes with open and close attribute. With this, if an error is encountered in the code outside this with context. It will not affect the codes inside the with context. It will be independent of its own whenever its time for it to be executed.",3,"The second argument in the open function represents the processing mode, i.e the action to be performed on the file being opened. By default string ""r"" which means to read the file.
+Other available options are ""w"" and ""a"" which denote to write and append to a the file respectively.",4,"With ""w"" argument as second argument. It will allow us to overwrite an existing file if already created. But if the file is not found, it will automatically create a new file and write into it with the name used as the first argument in the open function while when ""a"" is used as the second argument, it will allow us to add into an existing file if already created but if the file is not found, it will also automatically create a new file and write into it. ",4,Python will automatically create a file with the name being specify as the first argument in the open function and allow us to write into it.,2,"If Python is unable to find the request file, python will raise an error known as FileNotFoundError.",2,A higher order function is a type of function that either accepts a function as it's argument or return a function as it's return value.,2,Because we are not returning anything for the calculate function. We only defined a function inside it instead of that function defined should be return value for the calculate function.,3,The LEGB means :  Local / Enclosing Functions/Global / Built-in ,2,"A local variable has its scope only inside the function in which it's being declared, outside this function, it's won't exist any longer while a global variable has its scope in the whole script we are working on, it can be reference to in any function to be used in the script , but cannot be access in another module(script)",4,A closure is a programming procedure or pattern in which a scope maintain in order to access an enclosing scope's name.,2,"Because the val (which is the return value for function c) declaration  was after the invocation of the higher order function a. So since programming follows steps, and it could not encounter the val variable before the invocation of the higher order function a , so a NameError will be raised . If the val declaration had come before the invocation of the function a , it won't have given any error.",3,"We make us of the ""global"" keyword in front of a variable to make it reference a variable of  the same name defined in the module.",2,A decorator are higher order function that both accept a function as it's argument and return another function as its output. The are use to enhance functionality of an existing function without altering the core ability of the function.,2,we define *arg and\ **kwarg to a function so that the decorated function can be use dynamically ( i.e can receive any numbers of argument either in position argument form (*arg) or keyword argument form (**kwarg) when a decorator is designed to receive an arguments .,3,"#The aim of this program is to use a decorator to acheive time taken for an action to take place.
+
+# We first import the time module from python standard library
+import time
+
+#Next, we defined the decorator function time_it taken a function fn as its argument
+def time_it(fn):
+# we defined an inner function that decorate our fn function
+	def start():
+		
+# we declared a variable timer1 to hold the time the function want to start executing
+		timer1= time.perf_counter()
+# then we invoke the function for execution to take place
+		fn()
+#  we declared another variable timer2 to hold the time the function stopped executing
+
+		timer2=time.perf_counter()
+		
+# we now print out the time taken for the action by subtracting the starting time(timer1) from the ending time(timer2) and leaving the value in 4 decimal places
+		print(f""The time taken for the function to run is {timer2 - timer1 : 0.4f}"")
+		
+# now, we return the function start for our decorator function time it.
+	return start
+
+
+# now, calling the decorator function on another function to give more functionalities to the function (i.e calculating the time for it to be executed)
+@time_it
+def complex_operation():
+	for i in range(100000):
+		print(i)
+		
+# invocation of the function 
+complex_operation()",3
+84,Hannington Naamara,SNP_201088,A set is an unordered mutable data structure that prohibits duplicate values,2,"A set's syntax is putting the elements in curly braces separated by a comma. It has any number of elements up to infinity and is of different data types like INT, STRING, TUPLE, LIST, FLOAT.",0,Remove() is used to delete the number or item specified inside the argument and gives a Key Error when you try to put an item not existing as a parameter while discard gives no error if a missing parameter is given but still it returns the same set.,4,The symbol for intersection is &. for example a & b means members both in a and b,2,The alternative symbol for the difference method is - for example a - b means members in a not in b.,2,"Difference (-) is used to identify unique elements in one set while symmetric difference is used to identify elements not in common between two sets (^).
+a = {1,2,3,4,5}
+b = {6,7,8,4,2}
+c = a.difference(b)
+d = a.symmetric_difference(b)
+print(c)    prints out {1,3,5}
+print(d)    prints out {1,3,5,6,7,8}",4,"Union method is used to combine elements from two sets while intersection method is used to identify common elements between the two sets. for example
+a = {1,2,3,4,5}
+b = {6,7,8,4,2}
+c = a.union(b)
+d = a.intersection(b)
+print(c) prints out {1,2,3,4,5,6,7,8}
+print(d) prints out {2,4}
+
+",4,The alternative symbol for symmetric_difference method is ^ ,2,The alternative symbol for the union method is |,2,The contents of a frozen set cannot be altered after it is created since it is immutable. while regular set's contented can be changed once created and so mutable.,3,"Calculator.py has this code: calculator = 5 + 2    
+
+main.py has this code: import calculator
+                                     print(calculator.calculator)
+this returns 7 after running main.py since calculator is both a module name and a variable name running the script calculator = 5 + 2.
+
+Therefore calculator.calculator is valid to use.
+",3,print(type(calculator)) RETURNS <class 'module'> after type function is passed to it.,2,"After passing the math module into the dir function like this:
+
+import math
+
+print(dir(math))
+
+It displays all the attributes and methods associated to the math module.
+
+['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+
+",2,"It returns all the attributes and methods associated with the calculator module.
+
+import calculator
+print(dir(calculator))
+
+['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'calculator']
+",2,A script is a piece of code that executes on its own so all code is confined within a single program file while a module is a library that is imported to help the programmer quicken his work and is used by other files.,4,"Python standard library means a collection of different tools built to accelerate programmers productivity. for example math, string, this modules.",2,__name__ is a built-in variable that tells the name of the current module. It is commonly used for checking  whether a file is being used as a module or as a script.,3,"as keyword is used to assign an alias to an import for example
+
+import calculator as calc
+print(calc.calculator)
+
+prints out 7 since calculator.py has calculator = 5 + 2 in its body.",4,From module import x helps a programmer not to keep calling the module.x but rather just use x in his code while with regular import x makes the work tedious since one has to keep calling a module plus its variable in a program.,4,"1. Some variables are not catered for for example _elements = 1 + 2 cannot be computed with from module import *.
+
+2. It again increases the chances of name collisions since names from different imported modules can be the same.",3,"with open(""file.txt"", ""r"") as file:
+   read = file.read()
+   print(read)
+
+With context helps the program to close normally even when the program runs perfectly or not.
+",2,"The second argument to the open function represent the processing mode that is what a programmer intends to do with the file for example r for reading, w for writing and a for appending to an existing file.",4,"""w"" means the file is open for writing mode, it erases whatever is in the file and replaces with new data while ""a"" appends what is written to an existing file.",4,"""w"" mode creates a new file if it is not existing and puts whatever is written inside the write() to the new file for example:
+
+with open(""fil.txt"", ""w"") as file:
+   read = file.write(""Happy"")
+   print(read)
+
+creates a new file fil.txt with text Happy if it is not in existence.
+",2,FileNotFoundError is the exception raised if Python is unable to find the requested file.,2,"A higher order function is one that operates on other functions either by taking the function as its argument or as its return value. For example any(), all(), sum(), map()",2,"It displays a none datataype since there is no value returned in the calculate()
+so it should be:
+
+
+def multiply(a, b):
+
+  return a * b
+
+def divide(a, b):
+
+  return a / b
+def calculate(func, a, b):
+
+  func(a, b)
+  return a*b
+
+print(calculate(multiply, 10, 5))  in order for the program to print 50.",3,"LEGB is a rule used to decide the order in which the name spaces are to be searched for scope resolution.
+
+L stands for Local as one defined inside function/class. Then E for Enclosed as one defined inside enclosing functions(Nested function concept). Then G for Global as one defined at the uppermost level. Then B for built-in as one for reserved names in Python builtin modules.
+",2,"Local variables are those declared inside a function while global variables are declared outside a function. for example:
+names = ""Nammara Hannington"" # global variable
+def local():
+    others = ""I am Hanns"" # local variable
+    print(others)
+local()
+print(names)
+
+prints out:
+I am Hanns
+Nammara Hannington
+",3,A closure is a function that helps to invoke function outside their scope.,1,Because the name val is not defined.,1,def keyword,0,A decorator is a design pattern that allows a functionality addition to a program without affecting its structure.,1,They both help to allow all sorts of arguments to be passed on to the function.,3,"def complex_operation(n):
+
+    for i in range(n):
+
+        print(i)
+time_it = complex_operation
+complex_operation(10000)
+time_it(2)",0
+89,Eti-ini Umoh,SNP_201069,"A set is a mutable, unordered data structure that prohibits duplicate values. The elements within a set must be immutable and they should not be assumed to have an order.",2,{ },0,"The remove method will accept a single element in a set as an argument and delete it from the set if that element exists in the set, if it doesn't exist it will raise a 'KeyError' exception while
+The discard method will also delete a single element in a set but will not raise a 'KeyError' if the element doesn't exist in the set.",4,The ampersand symbol &, ,"The minus sign, '-'",,"The difference method finds elements exclusive to the other set, that is, the element(s) unique to a set  but not present in the second set, it finds non-duplicates in only one set
+while 
+symmetric_difference finds the elements which are non-duplicates in both sets, that is elements not shared by both sets but occurs singly in either set.",,"The union method combines the elements of both sets and returns the combination as a single set as output and it removes duplicates of elements while
+The intersection method accepts a set and accepts another set as argument and returns a new set which contains element(s) found in both sets at the same time, that is elements common to both sets.",,^ symbol,,The vertical pipe symbol,,2,,3,,3,,2,,2,,2,,4,,2,,3,,4,,3,,3,,3,,4,,4,,2,,2,,2,,3,,2,,4,,2,,1,,0,,2,,2,
+85,Samuel John ,SNP_201178 ,A set is an immutable un-ordered collection of items that avoids duplicates,2,‌set(),2,"Unlike ""discard"", ""remove"" raises an exception if the set element to be removed is non-existent.",4,&,2,-,2,"""difference"" returns the elements exclusive to a reference-set while ""symmetric_difference"" returns the elements exclusive to both sets.",4,"""union"" merges all elements present in two sets without repetition while ""intersection"" returns ONLY the element(s) common to two sets. ",4,^,2,|,2,"once a frozenset is created, it can't be mutated.",3,"Yes, this is so because an attributes and modules are two distinct objects. ",3,"The blueprint of the imported calculator module is printed. It is ""class module"". ",2,All the attributes of the imported math module are printed.,2,All the attributes of the imported calculator module are printed.,2,"A ""script"" can be imported as a module in another script and it's contents is accessible to be viewed by a user while a ""module's"" contents are most times hidden from a user. ",0,"The ""Python standard library"" is a collection of tools built to accelerate development and productivity.",2,__name__ is a private attribute. It is used to acquire the name of a module or script.,0,"""as"" keyword. For example, import datetime as dt",4,"""from module import x"" imports only the attribute x",1,"This implicit import statement could lead to ""name-collisions""",3,To guarantee a successful read/write operation and an opening/closing of a text file.,3," The second argument is the kind of operation that is to be performed on a text file. The available options are ""r"", ""w"", ""a""",4,"The ""w"" argument overwrites the contents of an existing file while ""a"" argument appends a string to the end of a text in a file.",4,A new file is created & the specified contents are written into it.,2,"""FileNotFoundError"" exception is raised.",2,"A ""higher-order function"" is one that either accepts a function as an argument or returns a function as a 'return' value.",2,A 'return' keyword is missing at the end of the block of code in the calculate function.,3,"LEGB stands for Local, Enclosing functions, Global, Built-in respectively.",2,"A ""local"" variable is available for use only within the block of codes in a function while ""global"" variable is available for the entire program code's use.",4,"A ""closure"" is a programming pattern in which a scope retains access to an enclosing scope's names.",2,"The line ""return val"" is accessing a variable yet non-existent at that point in the program execution.",3,nonlocal,0,"A ""decorator"" is a higher-order function that accepts a function as an argument & also return a function as it's return value.",2,*args and **kwargs are defined to a function that will wrap another because of the need to allow for any number of positional/keyword arguments with different configurations.,3,"def decorator_func(func):
+	
+	#decorator 
+	def time_it(*args, **kwargs):
+		print(""Timer has started!"")
+		
+		result = func(*args, **kwargs)
+		
+		print(""Your function execution time is 3000msecs."")
+		
+		print(""Timer has stopped!!!"")
+		
+		return result 
+		
+	return time_it 
+
+@decorator_func # this decorates the below 
+def complex_operation():
+	""""""this performs a complex operation 
+	""""""
+	for i in range(100000):
+		print(i)
+
+# Invocation of the decorated function 	
+complex_operation()",3
+43,Taiye Elelu,SNP_201185,A mutable and unordered data that prevents duplicate values.,2,"{ } curly bracket, with item separated by comma ",1,Remove method  remove what is inside the set while discard can take an element that isn’t present in the set,0,&,2,-,2,Symmetrical_difference returns a set with the symmetric differences of two sets while difference returns a set containing the difference between two or more sets,1,"Intersection method returns a set, that is the intersection of two other sets while union method return a set containing the union of sets",2,^,2,|,2,"Frozenset is a new class that has the characteristics of a set, but its elements cannot be changed once assigned",3,No,0,calculator,0,math,0,__main__,0,Module is a library that can be called on while script can be directly executable.,0,Group of modules accessible to program  which remove the need to rewrite commonly used commands.,2,Identifier ,0,Asteric ,0,Easier,0,It is confusing ,1,Pass all of it content at once into a single string ,0,"Default argument 
+w
+a
+r",2,"w= write to a file 
+a= append to the end ",2,It will create the file if it doesn’t exist. ,2,It will create the file the first time and continue working on it ,0,A function that accepts a function as an argument or return it as return value ,2,There is no return in the last function ,3,"Local
+Enclosing functions
+Global
+Built-in ",2,Global variable can be called upon anytime in a program while local variable can only be called within a function where it is defined. ,4,A programming pattern in which a scope retains access to an enclosing scope name ,2,The function a has no argument ,0,"global keyword
+nonlocal keyword 
+",0,A decorator is a type of higher order function. It wrap around a function ,2,When the number of argument that it will take isn’t defined. ,2,"def time_it():
+     p(f'This is a count down of how long it runa timer')
+     fn(*arg **kwargs)
+     print('Thank you')
+
+@ time_it()
+def complex_operation():
+
+    for i in range(100000):
+
+        print(i)",0
+85,Ronke Olorunfemi ,SNP_201174,"A set is a mutable, unordered data structure that prohibits or forbids  duplicate values. 
+",2,"Curly bracket with comma separating each element i.e {}, 
+With elements we have
+{1, 2, 3, 4}",1,The remove method raises a KeyError exception if the value checking for is not found in the set While discard method raises not error instead it moves on.,4,"& 
+is the alternative syntax for intersection method.",2,"Minus sign(i.e, -) is the alternative syntax for difference method.",2,"The difference method:
+The difference between two sets gives rise to another set from which the element of the first set that are not in or present in the second set. 
+ For example:
+A = {1, 2, 3, 4}
+B = {2, 3, 4}
+print(A - B)---> 1
+
+print(B - A)--->set() 
+The difference of A, B and the difference of B, A are not the same i.e they are not commutative. 
+
+The symmetric_difference method:
+Are element that are not shared in  both sets. Example;
+colours = {""red"", ""white"", ""blue"", ""yellow""} 
+more_colours = {""purple"", ""grey"", ""black"", ""red"", ""green"", ""yellow""} 
+print(colours ^ more_colours)--->  {white, blue, purple, grey, black, green} 
+The symmetric difference between both are commutative. 
+
+That is, (colours ^ more_colours) == (more_colours ^ colours) 
+
+",4,"Union method:
+ Is the combination of both sets. 
+
+For example:
+
+colours = {""red"", ""white"", ""blue"", ""yellow""} 
+
+more_colours = {""purple"", ""grey"", ""black"", ""red"", ""green"", ""yellow""} 
+
+print(colours |more_colours)--->{white, blue, purple, green, yellow, red, grey, black}
+
+Intersection method:
+It gives rise to another set which elements that are common to both sets.
+
+From example above;
+
+print(colours  & more_colours)--->{yellow, red} 
+",4,^ symbol ,2,"| symbol 
+",2,"It serves as a dictionary key. 
+
+Since dictionary key is immutable python object and frozen set is also immutable once is been created. ",3,"No, it is not valid. ",0,It returns the attributes of calculator module.,2,"It returns
+ all the attributes in math module",2,"It returns all the attributes in calculator module.
+",2,"
+A module is any python file with, .py extension. A script describes a python file that is meant to be executed directly.
+",3,"A standard library is a collection of tools built into a language to accelerate developers productivity.
+",2,"
+It represents double underscore. Python run this automatically when it is imported as a script. It starts the execution of the code from a main function explicitly.",1,"as keyword
+
+import calculator as calc
+import datetime as dt
+import pandas as pd.",4,"from module import x syntax is different from regular import syntax one because it import  specific attributes from the module. It import a module name directly into current file.
+from calculator import add, subtract
+print(add(2,3))-->5
+print(subtract(20, 10))--> 10
+While the regular import imports all the attributes within a module.
+",4,"Using 'from module import*  syntax' might be a bad idea because
+1) it will import all of the names values in any given file.
+2) there is high chances of importing multiple modules.
+3)it is not explicit as well as not readable.",2,"
+Using 'with' context serves as protection in the program. Is to basically close file in the program whether there is bug or not
+It also make the code cleaner and more readable.",3,"It accepts 'r' as the second argument which is default argument. r stands for read.
+Other available options are
+1. append, this add to the end of list if the file doesn't exist it create a new one. 
+2. write.
+3. x, It creates new file, if the file exist the operation fails.",4,"w'  will overwrite any existing file with the same name, it will also create a new file if the name of the file does not exist.
+'a' add to the file i.e it append new information to the file. Python will create the file and continuing append to it every subsequent time the program is been run.",4,Open function will create a file if it does not exist in the current directory.,2,FileNotFoundError.,2,Higher order function is a function that either accepts a function as an argument or returns a function as a return value.,2,"func(a, b) is not returned i.e
+return func(a, b)
+Because add is represented by func and func is been invoked on add and pass in 10 and 5.",3,Local /Enclosing function /Global/Built-in,2,Global variable is assign outside the function While Local variable is a variable that is assign inside the function.,3,Closure is a programming pattern in which a scope retain access to an enclosing scope's names.,2,It will raise an error because val is defined outside the function. ,3,global keyword. ,2,"A decorator enhances a function with additional features without changing its core functionality. 
+",2,**kwargs and *args are used in order to accept any number of arguments. ,3,"def time_t(fn):
+	def start_time():
+		print(""The time taken is"")
+		fn()
+		print(""it's nice to practice this!"")
+	return start_time
+@time_t 		
+def complex_operation() :
+	print(""3secs"") 
+complex_operation()",0
+71,Famous Areguamen,SNP_201072,A set is mutable unordered data structure that prohibits duplicate values. ,2,"{} 
+This is the same as the syntax for dictionary except that a dictionary uses key value paire while the elements of a set are separated by a comma",1,The  remove method  raises a key error exception if the value you are looking for in a set is not there while the discard method doesnt,4,&,2,-,2,The difference  method returns a new set of elements present in the set that the method  is called on but not present in the set that is passed in as an argument while symmetric difference returns a new set of element that are not shared by both sets,4,Intersection method returns a third set with elements that are found in both sets while union method combines the elements of both sets,4,^,2,|,2,Frozen set offers immutability and can be used as a key in a dictionary ,2,D,0,"It returns module as the class
+
+
+",2,Ee,0,H,0,A script is a python file that is meant to be executed directly while a module is a python file that is meant to be used by  other files ,4,A python standard library is a collection of tools built into a language to accelerate  developer productivity,2,The _name_ is an hidden attribute of every module.  It stores the modules name,2,"""As"" e. g import  formulas as forms",4, The from module import syntax x is used for importing a modules name directly into a current files name space while for the regular import method we use the dot syntax,4,Because  it increases the chances of name collision,3,It helps us to close a file when we are done with it instead of calling a close function. ,3,The processing  mode,2,"""W"" writes to a file while ""a"" adds content to a existing file",4,It will create that file automatically ,2,F,0,A higher order function accepts a function as an argument  or returns a function as a return value,2,G,0,"Local,  enclosing,  global,  built in",2,Global variable is a variable declared  outside of a function while local variable is declared within a function,4,A closure is a programming  pattern where a scope retains access to an enclosing scope's name,2,TV y,0,D,0,A decorator is a higher order function that accepts a function as an input and returns another function as an output,2,So it can accept  multiple arguments,2,Y,0
+78,Fawas Olaosebikan ,SNP_201076,"A set is a mutable, unordered data structure that prohibits duplicate elements.",2,"Set = { elements, elements, elements }",1,Remove methods will raise an error if the argument passed isn't contained in the set while discard method will not raise an error if the elements is not contained in the set. ,4,&,2,|,2,The difference method is used to determine unique elements contained in one set but not in the other while symmetric difference is used to identify unique elements in both sets  that are not common to both sets.,4,The union method helps combine all the elements in both sets without duplicating while intersection method helps extract elements that are common to both sets. ,4,^,2,|,2,A frozen set is immutable while a regular set is mutable.,3,"Yes 
+Yes, it's valid
+",3,Class 'module',2,Nothing ,0,"Built-in, cached, doc, file, loader, name, package, math",0,A script is a python file which to executed directly while a module is a python file to be used in another python file. ,4,Python standard library is a collection of tools built-in to a programing language to accelerate developers' productivity.,2,Dunder.  It is used to indicate a package. ,0,"As
+Import math as mat",3,It helps extract an object directly from the name space of a module and it can used directly as it is. ,4,This is so because there might similar variables between the script and the module. ,3,To prevent the data in the file from being corrupted. ,1,"Tell us what to do to the file 
+r-read
+w-write
+a-append ",4,"W will check if the file exist, if it does, it will replace the whole content with the argument passed and if it doesn't, it will create a new file and write the argument as a new content. 
+While a will add (append)  to the existing content of a file. ",4,It will create the file and then write the argument passed in it as a content.,2,None,0,Higher order function is a function that takes another function as an argument.,2,That is because the function is only invoked in the scope but not return.,3,"Local
+Enclosing 
+Global 
+Built in",2,Local variable is a variable that can only be used with in the scope of a function whole global variable is variable that can be used both in and out side the scope of a defined function.,4,A closure is a programming pattern in which a scope retains access to an enclosed scope's name. ,2,This is so because val is a local variable. ,0,Global,2,A decorator is a higher order function that takes a function for an argument and also returns a function as a return value. ,2,This is to enable the inner functions to be able to take any number of positional or keyword arguments.,3,"def complex_operation (fn):
+     ",0
+91,OLALEKAN MACAULAY,SNP_201147,"A set is a mutable, unordered data structure that accepts immutable objects as its elements and prohibits duplicate values",2,set(),2,"The remove method runs to an error when the element to be removed does not exists in the set while discard method does not run to an error, nothing changes",4,&,2,-,2,Difference method returns the element in set A that are not present in set B while symmetric difference method returns the element that are not common to both elements,4,Union method returns the element in the two sets but remove duplicate value while intersection method returns the element common to both sets,4,^,2,|,2,A frozen set is immutable I.e elements in it can not be removed and new elements can't be added,3,Yes. A module can have an attribute with the same name as the module,3,"It returns class 'module'
+That's the class of the object (calculator)",2,"['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+This is a list containing the attributes of the math module including the dunders
+",2,"['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'calculator']
+This is a list containing the attributes of the calculator module including the dunders",2,A script is a Python file to be directly executed while a module is a Python file that is meant to be used by other Python files,4,Python Standard Library is a collection of tools built into Python language to accelerate development and productivity,2,It is a dunder attribute. It allows us to determine whether a file is being used as a module or as a script,3,"as
+import math as ma",4,"The ""from module import x returns the specific attribute ""x"" and other attributes are not imported which is different from regular import syntax which imports all attributes ad make them work when they are called on",4,There may be duplicate names shared between two or more modules when they're imported together. ,3,Using the  close method may not  close the opened file if there's a bug before the file is closed which may cause threat to the system memory.  It may lead to the data getting lost or corrupted,3,"Processing mode which tells Python what we want to do with the file
+read rep. as ""r""
+write rep as ""w""
+append as ""a""
+",4,w tells python to overwrite the file completely while a add content to the file without overwriting the content of the file,4,It will create a new file with the name imputed as the first arg,2,FileNotFoundError,2,A higher order function is a function that accepts a function as an argument or returns a function as a return value,2,The function calculate does not return anything due to the absence of return keyword,3,Local\ Enclosing functions \ global \built-in,2,A global variable is a variable assigned in a global scope I.e it is assigned outside any function in a python file while a local variable is one assigned inside a function. It is bound to be used in the function I.e the local scope,4,A closure is a programming pattern in which a scope retains access to an enclosing scope's names even if that enclosing scope no longer exists,2,val is assigned to a value outside the scope of the function. val is not assigned to any value in the function scope,3,global keyword,2,A decorator is a higher order function that accepts a function as an input and returns another function as output,2,Because the function that will wrap the other is the function we are invoking,0,"import time
+#here the module ""time"" is imported, this will help to run the timer
+
+def time_it(func):
+#a function that accepts a functions as an argument is defined here and its made an enclosing function that encloses the function defined below
+	def wrapper():
+		start = time.time()
+
+		end = time.time()
+		result = func()
+		
+		print(f""the time it takes python to complete the countdown is {end-start}"")
+		return result
+	
+	return wrapper
+#another function is defined and this function has a variable named start this get the time at which the program start running and end  which get the time the program ends then the time interval is printed out 
+
+@time_it
+def countdown():
+	for i in range(100000):
+		print(i)
+countdown()
+#the function  defined here is made the argument for the function time it and the above steps are made to run",0
+95,Oluebube Miracle Chibuzo,SNP_201152,"A set is a mutable, unordered data structure that contains unique values.
+The elements in a set can only be immutable object type such as strings, ints, booleans etc.
+
+It is created with a pair of curly braces, {}.",2,"A set is created with a pair of curly braces {}, nevertheless, an empty set can only be created using the set function, set(), else python will see a set of curly braces without elements to differentiate it as an empty dictionary",2,"The remove method raises a key error exception if the value you're looking for in a set does not actually exist in that set. While 
+The discard method will not raise an error message if the value is not found, rather it'll continue. ",4,"The alternate symbol for the intersection method is the ampersand sign ""&"" ",2,"The alternate symbol for the difference method is the minus sign ""-"".",2,"The difference between difference and symmetric difference is that difference returns a set of unique elements that are present in the set the method is called on but are not present in the set that is passed as the argument.
+While the symmetric difference returns a new set of unique elements in both sets. That is, elements that are not found common in both sets. ",4,"The union method returns a new set containing all the elements of both sets (the set the method is called on and the set passed as the argument) without duplicates of common elements.
+
+While the intersection method returns only the elements that are common in both sets (the set the method is called on and the set passed as the argument).",4,The alternate symbol for the symmetric_difference method is  ^,2,"The alternate symbol for the union method is single vertical pie ""|"" ",2,"A frozenset offers an immutable set and as such can be used as a dictionary key, whereas other regular sets are mutable. ",3,"Yes a module attribute can have same same name as the module.
+
+Yes calculator. calculator is valid to use in main. py",3,"It returns type module
+
+<Class 'module'>",2,It returns all the attributes that is available for use in the module both dunder methods and other methods. ,2,"It returns all the attributes that are available for use in that module, both dunder methods and other methods. ",2,"A script is a python file that is meant to be executed directly while a module is a python file that is meant to be used by other files (scripts).
+
+In other words modules are executed in scripts. ",4,"Python standard library is a collection of modules built into python language to accelerate developer productivity. Such modules are developed for various use cases such as mathematics, Statistics, dates, times etc. ",2,"The __name__ represents dunder name and it is a variable that allows us to determine whether a file is used as a module or as a script.
+Dunder name is aswell that special attribute that every imported module must have.
+
+If the file is a script it evaluates main else it evaluates the module name. ",3,"The as keyword is used to assign an alias to an import.
+Example:
+Import Miracle as Mimi
+This is done to make referencing easier for a user. ",4,"The regular import syntax Imports all the name space available in a module, whereas ""from module import x"" syntax Imports specific attributes or names, or functions or variables from a module.",4,Because it increases the chances of having one name appearing many times in a program otherwise known as name collision. ,3,Because it closes the file from the system memory should the program run into an error before the program reaches the close line.,3,"The second argument to the open function represents what we intend to do with the file.
+The options available are:
+""r"" for read
+""w"" for write
+""a"" for append",4,"The ""w"" (write) argument when called on a file overwrites the existing contents in the file whereas the ""a"" (append) method when called on a file adds to the existing contents in a file. ",4,"It creates the file and writes into it, but when it is called again it overwrites the initial content",2,"The ""FileNotFoundError"" exception is raised if python is unable to find the requested file. ",2,A higher order function is a that either accepts a function as an argument or returns a function as a return value. ,2,"func(a, b) was not returned, thus the value cannot be seen in the outside world.
+To correct it we pass return along side the function. I. e 
+return (func(a, b))
+With these 50 will be evaluated and seen. ",3,"The acronym LEGB stands for 
+L - Local
+E- Enclosing function
+G- Global and
+B- Built-in keyword",2,"The difference between a local variable and a global variable is that a local variable cannot be accessed by a high level scope whereas a global variable can be accessed by a low level scope.
+
+That is to say that any function declared inside a function (local variable to that function) cannot be accessed outside that function, but any variable declared before the function or outside the function (global variable) can be accessed by another function in the same script. ",4,A closure is a programming pattern in which a scope retains access to an enclosing scope's name even if that enclosing scope no longer exists. ,2,"val was declared before it's been assigned. In other words, val was declared outside the print function. ",3,The nonlocal keyword is used to make a  variable in a function reference another variable of the same name defined in a module. ,0,"A decorator is a higher order function that both accepts a function as an argument and returns another function as an output or return value.
+It serves as an expansion of part of a function that keeps all the basic logic of the original function but adds an additional task to it.
+It's otherwise known as an enhancer. ",2,"When you define *args and **kwargs to a function that holds another, it will enable the second function to be wrapped to carry as many positional arguments as possible. ",3,"import time
+#this program is designed to keep record of time that it takes to execute a particular function. This will make use of the concept of decoration and we as well will use time module provided by python.
+
+#definition of function
+def my_operation (fun):
+	
+	#definition of the nested function
+	def Time_it():
+		
+		print(""function has started"")#to show when the function started
+		
+		start = time.time() #the start time
+		
+		fxn = fun() #invocation of the decorated function
+		
+		end = time.time()#the end time of the function
+		
+		timing = (end - start)#time taken to execute the program
+		
+		print (f""the time it took to execute this program is {timing} munites"")#the time of execution
+		
+		return fxn
+	
+	return Time_it
+	
+	#defining the decoration
+	
+@my_operation #wraping the function with the decorator
+
+#definition of the decorator
+
+def complex_operation():
+	for i in range(100000):
+		print(i)
+
+#calling the function
+complex_operation()",3
+91,Marvelous Frank Solomon ,SNP_201124," A set is a mutable, unordered data structure that contains only immutable objects with no duplicate element. ",2,"A set is created using curly braces {}
+",0,"The difference between remove and discard method is this:
+
+Remove method raises a KeyError if the element passed as an argument is not in the set
+
+Discard method accepts an element that doesn't exist in the set as an argument without throwing a KeyError exception
+",4, The alternate symbol for intersection method is '&',2,The alternate symbol for difference method is '-' ,2,"Symmetric difference method returns the elements present in the two sets but not common to the two sets 
+Difference method is an operation on two sets that returns elements not common to the two sets
+
+In other words difference method returns the difference between elements present in two sets WHILE symmetric difference removes the elements
+",4,"Intersection method invoked on one set returns a new set with elements found in both the original set and the set passes as an argument
+WHILE
+Union method returns elements in both the set invoked and the set passed as argument without duplicates
+",4," The alternate symbol for symmetric difference method is  ^
+",2,"The alternate symbol for union method is |
+",2," Frozen set is immutable and can't be modified
+A regular set is modifiable ",3,"Yes, a module and its attributes can have the same name because the module and its attributes are in different scopes. 
+""calculator.calculator"" is valid and can be used in main.py",3," The type returned is a class 'module'
+<class 'module'>
+",2,"A list of all the attribute names in math module is returned
+",2,"A list of all the calculator module's attribute name is returned
+",2,"The difference between a script and a module is this:
+
+A script is a python file that is executed directly
+
+A module is a python file that isolates a logic meant to be used by script files
+",4,"Python standard library is a library made up of tools such as modules, directories and python files built into the language to increase the developer's productivity.
+
+",2,"
+ __name__ variable is an attribute automatically generated by python to store the name of the module. It is commonly used to check if a python file is running as a script or a module 
+",3,"'as' keyword is used to assign an alias to an import
+
+Example :
+
+import numpy as np
+",4,"from keyword allows us to import specific attributes instead of the regular import which imports all the module's content.
+from keyword also allows us to use attribute name directly without namespacing it",4,"""from module import *"" does not explicitly give us the names of the attributes of that module. Therefore, there is a high chance of experiencing name collisions in our program.
+",3," Using 'with' context is necessarily because it is a wrapper that protects file and properly finishes an operation even if it didn't execute properly. The with context ensures the file data is not corrupted or lost
+",3,"The second argument is the 'processing mode'.
+The modes available is : read 'r', write 'w', append 'a'
+",4,"Write argument overwrites the previous content of the file while the append argument adds to the previous content of the file
+",3," Even if the file does not exist, write mode creates a new file
+",2,"The exception raised is FileNotFoundError
+",2,"A higher order function is function that accepts a function as an argument and returns a function as a return value.
+",2," The calculate function does not have a ""return"" keyword besides the function 
+",3," LEGB acronym shows how python searches for a name in python files.
+L - Local Scope 
+E - Enclosing Function
+G - Global Scope 
+B - Built in Function
+",2,"A global variable is a variable available to be used globally or locally within a python file
+Local variable is created within a function and can only be used locally
+",4,Closure is a programming pattern in which a scope retains access to an enclosing scope's name. It keeps track of data that doesn't exist in your program,2,"There would be a Name Error because the ""val"" variable is created after invoking the function.
+",3,Global keyword ,2," A decorator is a higher order function that accepts a function as an input, enhances the function by adding extra actions without modifying the original logic and then returns the enhanced function as an output.
+",2,"Defining args and kwargs is important because, *args and **kwargs allows the decorated function to accept any number of positional and keyword argument. 
+It allows the usage of a decorator across any type of function. 
+",3,"'''CODING ASSIGNMENT''' 
+
+def time_it(func):
+	'''A decorator function that times the main function execution'''
+	def decor():
+		print(""Timer starts counting!"")#imaginary timer, lol.
+		func()#main logic
+		print(""It took soo much time to complete execution"")
+	return decor
+
+'''OPTION 1 (Using at symbol, Synthatic Sugar)
+Here, the at symbol and the decorator name is placed at the top of the function and the function is invoked normally without any additional syntax'''
+
+@time_it	#The at symbol
+def complex_operation():
+	for i in range(100000):
+		print(i)
+		
+#invoking the function
+complex_operation()
+
+'''OPTION 2 (Normal Syntax)
+Here, the main function is passed as an argument into the decorator function when you def time_it(func):
+	'''A decorator function that times the main function execution'''
+	def decor():
+		print(""Timer starts counting!"")#imaginary timer, lol.
+		func()#main logic
+		print(""It took soo much time to complete execution"")
+	return decor
+
+'''OPTION 1 (Using at symbol, Synthatic Sugar)
+Here, the at symbol and the decorator name is placed at the top of the function and the function is invoked normally without any additional syntax'''
+
+@time_it	#The at symbol
+def complex_operation():
+	for i in range(100000):
+		print(i)
+		
+#invoking the function
+complex_operation()
+
+'''OPTION 2 (Normal Syntax)
+Here, the main function is passed as an argument into the decorator function when you want to invoke the function'''
+
+def complex_operation():
+	for i in range(100000):
+		print(i)
+		
+#invoking the function
+time_it(complex_operation)() to invoke the function'''
+
+def complex_operation():
+	for i in range(100000):
+		print(i)
+		
+#invoking the function
+time_it(complex_operation)()
+
+
+",0
+96,Bockarie Lahai,SNP_201046,"A set is an unordered data structure that prohibit duplicate values. A set is a mutable data structure, but disallow duplicating values in it.",2,"The syntax for creating a set is by using curly brace {} with a comma(,) separating its elements(values).
+
+school = {""Trinity"", ""Islamic"", ""HRSS""}",1,"The remove method raise a key error exception when you try to remove a value that does not exist in the set.
+Whereas, the discard method will successfully run without raising an error even when the targeted value to be removed does not exist in the set.",4,"The ampersand (&) symbol is used as a shortcut symbol for the intersection method.
+Eg.
+car_colors = {""Blue"", ""Blace"", "" Yellow""}
+house_colors = {""Gray"", ""Yellow"", "" Green""}
+
+print(car_colors & house_colors)
+#output
+
+{'Yellow'}",2,"The minus (-) sign is used as a shorthand symbol to find the difference between two sets.
+Eg.
+car_colors = {""Blue"", ""Blace"", "" Yellow""}
+house_colors = {""Gray"", ""Yellow"", "" Green""}
+
+print(car_colors - house_colors)
+#output
+{'Blue', 'Black'}",2,"The difference method return a new set of elements that are present in the set the difference method is called which are not present in the set that is passed in as the argument.
+Eg.
+car_colors = {""Blue"", ""Blace"", "" Yellow""}
+house_colors = {""Gray"", ""Yellow"", "" Green""}
+print(car_colors - house_colors)
+#output
+{'Blue', 'Black'}
+
+Whereas, the symmetric difference method return a new set of elements that are not shared in the two set.
+Eg.
+car_colors = {""Blue"", ""Blace"", "" Yellow""}
+house_colors = {""Gray"", ""Yellow"", "" Green""}
+print(car_colors ^ house_colors)
+#output
+{'Blue', 'Black', 'Gray', 'Green'}",4,"The Union method return a set with all the elements present in both the set the method is called on and the set passed in as the argument.
+Eg.
+car_colors = {""Blue"", ""Blace"", "" Yellow""}
+house_colors = {""Gray"", ""Yellow"", "" Green""}
+print(car_colors | house_colors)
+#output
+{'Blue', 'Yellow', 'Black', 'Gray', 'Green')
+
+Whereas, the intersection method returns a new set of value(s) that is common in both sets.
+Eg
+
+car_colors = {""Blue"", ""Blace"", "" Yellow""}
+house_colors = {""Gray"", ""Yellow"", "" Green""}
+
+print(car_colors & house_colors)
+#output
+
+{'Yellow'}
+",4,"The caret (^) symbol is used as a shorthand syntax for the symmetric difference method.
+Eg.
+car_colors = {""Blue"", ""Blace"", "" Yellow""}
+house_colors = {""Gray"", ""Yellow"", "" Green""}
+print(car_colors ^ house_colors)
+#output
+{'Blue', 'Black', 'Gray', 'Green",2,"The single vertical pipe (|) symbol is used as the shorthand symbol for the Union method.
+Eg.
+car_colors = {""Blue"", ""Blace"", "" Yellow""}
+house_colors = {""Gray"", ""Yellow"", "" Green""}
+print(car_colors | house_colors)
+#output
+{'Blue', 'Yellow', 'Black', 'Gray', 'Green')",2,"A frozenset makes a set immutable. A regular set is mutable but in a frozenset once the set has been created it cannot be changed as it is for the normal set.
+Example of frozenset:
+freeze = frozenset ([5, 10, 15, 20])
+print(freeze)
+
+The remove, discard, add and update methods cannot work with the frozenset.",3,"Yes! Declaring a calculator variable in calculator.py will not raise any error. It will run successfully when imported in the main.py file but
+Technically it is not advisable to use the same name for a module and an attribute in that same module.",3,"It will return the class or blueprint of the imported module. We will get <class 'module'> when the imported calculator module is passed in the type function.
+It belongs to the class module.",2,It returns all the attributes available on the math module.,2,It will return the built_in attributes available on it and the custom calculator attribute we created in it.,2,"A script is simply a Python file that is executed directly. The main.py file is the script file in the question example here.
+Whereas, a module is a Python file that is meant to be use by another file like the script file. The calculator.py file is the module in the question example.",4,"The Python standard library is the built_in modules available in Python. Examples:
+math, string  modules etc.",2,The __name__ is a special variable that help us determines whether a file is been used as a script or a module.,3,"The ""as"" keyword is used to assign an alias  to an import.
+Eg:
+From the question example;
+main.py
+import calculator as calc
+print(calc.calculator)",4,"The ""from module import x"" is used to import specific attribute(s) into the script file.
+Whereas, the regular import syntax imports all the attributes available on the module being imparted.",4,"There maybe collision in attribute names from other modules being imported in the script file. Using the ""from module import"" will be prone to causing the program to crash.",3,"The ""with"" automatically closes the text file after the you read or write to a file. It help your program to close at the end without fear even if there is faulty code.",3,"The second argument to the open function represent the ""processing mode"" of the text file. That is, whether to read from, write or append etc. to the file.
+The available options are:
+1. Read represented by ""r""
+2. Write represented by ""w""
+3. Append represented by ""a""
+4. Read binary represented by ""rb""
+5. Write binary represented by ""wb"" etc.",4,"The ""w"" argument is used to write to a file. When you use the ""w"" processing mode it will overwrite any text that exist in the old text file.
+Whereas, the ""a"" processing mode write to the end of the text file without overwriting the file.
+",4,Python will create a new file with the name of the provided in the first argument in the open function.,2,A file name error exception will be raised.,2,A higher order function is a function that accepts a function as an argument or return a function as a return value.,2,"The problem is with the higher order function calculate where the arguments were not returned. See:
+def calculate(func, a, b):
+    func(a, b) #This will not return the function invocation
+",3,"Local, Enclosing Functions, Global and Built-in",2,"A local variable exist only within the block of a function it is declared. It exist within a function body.
+Whereas, the global variable is a variable assigned outside a function body.",4,A closure is a programming pattern wherein a scope retain access to an Enclosing scope's name even if the Enclosing scope no longer exist.,2,We are invoking the a function and the val variable created does not exist in the scope of a,3,The global keyword should be used to reference a variable of the same name defined in the module.,2,A decorator simply enhance a function  with additional features without changing the core functionality of the function.,2,Defining *args and or **kwargs helps in accepting any amount of positional arguments for *args and any amount of keyword arguments for **kwargs from the function being wrapped.,3,"#The decorator 
+def time_it(func):
+    def wrapper():
+        print(""The timer has started"")
+        func()
+        print(""The function executed at .....time"")
+    return wrapper
+
+#Using syntactic sugar:
+@time_it
+def complex_operation ():
+    for I in range (100000):
+        print (i)
+complex_operation ()
+
+#Using the other method
+def complex_operation ():
+    for I in range (100000):
+        print (i)
+result = time_it(complex_operation)
+print (result())
+    ",3
+83,Damilola Akinyemi,SNP_201051,"A set is a mutable, unordered data structure that prohibits duplicate values.",2,A set object is created with a pair of curly braces.,2,The remove method raises a key error exception if the value searched for is not found while the discard method will not raise any error exception even when the searched  value is absent.,4,The ampersand sign (&),2,The minus sign (-),2,The difference method returns a new set of elements that are present in the set the method is called on that are not present in the set passed as the argument while the symmetric difference method returns a set of elements that are not shared between the two sets.,4,The union method returns a new set with combined elements of both sets and removes duplicates while the intersection method returns a third set of elements found in both sets.,4,The upward arrow sign (^),2,The vertical pipe sign (|),2,A frozenset due to its immutable data type can be accepted as a key in a dictionary.,3,Yes it is.,1,Class of module,2,A list of names of attributes of the math module.,2,It returns the dunder name attributes of the module.,0,"A script is a description of a python file that is meant to be executed directly while a module describes a python file that is meant to be used by other files or script files. A module is an object which represents a collection of names under a shared namespaces. It is a python file with the "".py"" extension.",4,A standard library is a collection of tools built into the Python language to accelerate developer productivity.,2,"This ""__name__"" represents the dunder name special variable
+It shows whether a file is being used as a module or a script.",3,"The as keyword is used to assign an alias to a word.
+Example;
+import calculator as cal
+
+print(cal.subtract(3, 6))",4,"The ""from module import x"" syntax imports attributes(specific or all) from a module or file to another file.",3,This is because it can result to name collision( this describes when two names refer to two different things in the program) which can be explicit and confusing.,3,It relieves the stress of invoking the close call on the code. The text file automatically closes when the with context is invoked.,3,"The second argument represents the processing mode of the file which includes what is to be done to the file.
+The file can be read from, written to or appended to.",4,"The ""w"" argument represents write. This writes to a new file and if the file already exists and a file is to be written to it, Python automatically replaces it with the new text.
+The ""a"" argument represents append. This adds to an already existing file.",4,Python will default to error.,0,"""file not found"" error",2,A higher order function is a function that either accepts a function as an argument or returns a function as a return value.,2,"The ""func"" was not returned.",3,"LEGB means Local, Enclosing Functions, Global, Built- in.",2,A local variable is a scope that is assigned inside a function while a variable is of global scope if it is available anywhere within the current file.,4,A closure describes a programming pattern in which a scope retains access to an enclosing scope's names.,2,"""Val"" is not defined.",1,The global keyword.,2,"A decorator is a higher order function that both accepts a function as an input and returns another function as an output.
+It enhances a function with additional features without changing its core functionality.",2,This is to enable it accept arguments.,1,"def time_it(gn):
+       def complex_operation():
+              for i in range(100000):
+                    print(i)
+                    result = gn()
+                    return result
+
+       return complex_operation
+
+",0
+82,Justus Ilemobayo,SNP_201116,"A set is a mutable, unordered data structure that prohibits duplicate values. A set can only contain unique values. It removes duplicate values ",3,"curly braces with elements seperated by a comma. Example  sex_ex = {  1,2,3,3,3,4,4,5} . This will give {1,2,3,4,5}",1,The remove method will raise a key error if the value passed is not in the set while the discard method will not raise any exception or error,4,the alternate symbol for intersection is &,2,the alternate symbol for difference method is minus ( ' - '),2,the difference method returns the values that are in one set of value but not in the other WHILE symmetric difference  returns the elements that are not shared between the two sets this means the elements that are not in both sets. the symbol for this is caret sign,4,the union method combines the elements of both set together and removes duplicates in the process WHILE  the intersection method returns the elements that are common to both sets,4,the alternate symbols is the caret (^)sign,2,the symbol is a vertical pipe character ( | ),2,"A frozen is an immutable set. Here, values cannot be added or removed. This means the set cannot be modified once it has been defined",3,Yes. it can ,2,module is returned ,0,it returns all the functions or methods available in the math module,2,it returns all the functions and methods in the calculator module,2,A script is a python file that is supposed to be used directly while a module is a python file that is supposed to be used by other python file that is used by script files ,4,A standard library is a collection of tools built into a language to accelerate developer productivity. These are functions/ tools given by python to help improve productivity,2,it stores the modules names,1,"the keyword used  is ""as"". For example 
+
+import numpy as np
+
+print(np.array([1,2,3]))",4,from module import x . this will only import the function/method from the module while the import module will import all the functions/modules available in that module,4,this imports all the value names or functions or methods in that module,1,the with helps to close the file whenever we are done with the file. This is because the with keyword takes in a block of code and closes the file after the block of code has been executed ,3,"the second argument is used to read the file when 'r' is specified, other options are 'w' to write a file, 'a' to append a file",4,with write function python only creates the file once and then replaces the file content subsequent times but with the append method python creates the file and continues to append the content subsequent times ,4,it will replace/ overwrite the content of the file ,0,"it will raise an exception, 'File not found""",2,It is a function that either accepts a function as an argument or returns a function as a return value,2,this is because the return keyword was not used to return the output of the function,3,"Local
+Enclosing Functions
+Global
+Built-in",2,"A global variable is a one that is available in a particular python file. while a  local variable is one that is only available in a function, this is because it can only run within the function. this is because python discards the variable after executing the function",4,It a programming pattern in which a scope retains access to an enclosing scope's names,2,this will return a name error because the variable 'val' was called before being assigned ,3,the keyword 'global' ,2,A decorator is an higher order function that takes a function as an input and returns another function as an output,2,None,0,None,0
+68,James Oluwabusayo Joshua ,SNP_201104,Set is a mutable unordered data structure. It does not all duplicates and it's contents are immutable ,2,We can use {} ,0,They both remove element from the set but removes raises an error whenever the element to be remove is not found while discard does not,4,Ampersand &,2,Minus sign -,2,Difference returns a new set of elements that are in the main set but not in the other set while symmetric_difference returns the elements not shared by both sets ,4,Union of sets returns a set containing all the elements two or more sets while intersection returns a new set containing the elements they have in common ,4,^,2,Vertical bar(pipe) |,2,It can be used to create a dictionary ,0,No,0,Module,1,No idea,0,No idea,0,Script is a python file meant to be executed directly in the file while module is a python file written to be ran in another file ,4,It's a collection of tools built into a language to accelerate developer productivity. ,2,"Daunder method, it is used when a file is been run or used as a script ",3,as,3,It imports all the attributes ,2,It may import even the attributes that we don't need,1,It is recommended to use the with because it closes the file immediately you're done ,3,"It represents the action you want to carry out. ""r"" (read)  or ""w"" (write) or ""a"" append",4,"""w"" writes to a file while ""a"" appends to an existing file and if it doesn't exist it creates it",4,It creates it ,2,File Not Found Error,2,Higher order function is a function that either accepts a function as argument or returns a function as a return value ,2,The def calculate function is missing a return value ,3,"Local, Enclosing functions, Global, Built-in",2,A local variable is a variable limited to the body of a method or function while a global variable is available for use in the whole body of the code,4,A programming pattern in which a scope retains access to an enclosing scopes name,2,No idea,0,Non local,0,A high function that boths accepts a function and returns a function ,2,Because you can't predict the number of steps or sequence it'll be ,0,.,0
+69,Eiman Mohamed Abdallah Alawad,SNP_201060,"A mutable, unordered data that prohibits duplicate values",2,"print(set([1, 2, 3])) 
+ return {1, 2, 3}",1,Remove raised a key error exceptions but discard doesn't raised an error if the elements doesn't exist,4,&,2,-,2,The difference method identify unique elements in one set but symmetric method identify elements not in common between two sets,4,The union method combines all elements of both sets and remove all duplicate but intersection method return a third set with an element that found in both the original set,4,^,2,|,2,It is immutable set ,3,"Owner = ""Eiman""
+def divide(a, b):
+      return(a/ b) 
+
+
+import calculator
+print(calculator.Owner)
+print(calculator.divide)",0,Nothing ,0,math,0,calculator,0,Module is any python file with .py extension but script describe py file to be use by other file ,4,A collection of tools built into language to accelerate developer productivity,2,It determines whether a file will be used as a module or as a script,1,"import calculator as calc
+import datetime as st
+
+print(calc.add(2, 1))
+print(st.daytime(2020, 4, 26))",2,from import keyword is load module and make it a available in our file ,0,"Because that will increase the chances of name, it will going to be duplicate name that shared ",3,To ensure that open file descriptors are closed automatically after program execution leaves the context of the with statement,3,"It represents processing mode
+available options (read, write, append)",4,"""a"" argument create the first time around and continue appending in it ",4,We get an error because a file does not exist ,2,"NumeError, TypeError, Built_in exception",0,A function that either accepts a function as an argument or return a function as a return value,2,"Doesn't return func(a, b)",3,Local/ Enclosing functions/ Global/ Built_in ,2,Global variables is signed outside functions and local variables is signed inside a function ,4,A programming pattern in which a scope retains access to an enclosing scope's names,2,"It doesn't return a 
+",0,Global keyword before the variable name at start function,2,Higher function that both accepts functions as an input and return another function as an output,2,To be sure how many argument might be pass to your function,1,-,0
+93,Mujeeb Sunmola,SNP_201132,"A Python set refers to an unordered collection of data type that are iterable, mutable and has no duplicate values. It contains a sequence of unique and immutable elements.",2,"The syntax to create a set is:
+p=set() #This will creates an empty set with a variable namespace of ""p""",2,"The remove method raises an error/exception when the specified element doesn't exist in the given set.
+Whereas,
+The discard method will not intimate the absence of elements of which is trying to remove (i.e. it'll not raise an error) but rather, it'll return the original set.
+
+
+#Given the set a below
+a={6,1,8,5,3,10,9,4,15}
+
+#To demonstrate the discard method:
+a.discard(100)
+print(a) #This will return {1, 3, 4, 5, 6, 8, 9, 10, 15}
+# Though, 100 is not present in the list of items of set a, yet the discard method will not raise an exception. It will just return the set a as the output value
+
+#To demonstrate the remove method
+a.remove(100)
+print(a) #This will raise a KeyError Exception",4,"The alternative symbol for the intersection method is ""&""
+
+For instance:
+a={6,1,8,5,3,10,9,4,15}
+b={5,39,0,4,3,8,1}
+
+print(a.intersection(b))
+print(a&b)
+
+#The two print statements above will return the same output of {1,3,4,5,8}",2,"The alternative symbol for the difference method is ""-""
+
+For instance:
+a={6,1,8,5,3,10,9,4,15}
+b={5,39,0,4,3,8,1}
+
+print(a.difference(b))
+print(a-b)
+
+#The two print statements above will return the same output of {9, 10, 6, 15}",2,"The difference between two sets A and B (also known as asymmetric difference) refers to the element present in one of the set but not in the other set. The symbol for set difference is the subtraction sign ""-"". For instance, A-B means everything in set A that is not in set B
+
+WHILE
+
+The symmetric difference of two sets A and B refers to the elements from.both sets(i.e. A OR B) that are not present in the intersection of the two sets. The symbol for set symmetric difference is ""^""
+For instance, A^B means all the elements that are exactly in one set
+
+#To demonstrate, given the following sets
+A={6,1,8,5,3,10,9,4,15}
+B={5,39,0,4,3,8,1}
+
+#Set difference
+print(A-B) #It will output {9,10,6,15}
+#Set symmetric difference
+print(A^B) #It will output {0, 6, 39, 9, 10, 15}",4,"The union of two sets A and B is defined as the set of elements that belong to either A or B, or possibly both. Simply put, it refers to.all.the elements from both sets and its alternative symbol is ""|""
+Whereas,
+The intersection of two sets A and B is defined as the set of elements that belong to both A and B. It alternative symbol is ""&""
+
+For demonstration, consider the sets defined below:
+A={6,1,8,5,3,10,9,4,15}
+B={5,39,0,4,3,8,1}
+
+#set union
+print(A|B) #This will return {0, 1, 3, 4, 5, 6, 39, 8, 9, 10, 15}
+
+#set intersection
+print(A&B) #This will return {1,3,4,5,8)",4,"The alternative symbol for the symmetric difference method is ""^""
+
+For instance:
+a={6,1,8,5,3,10,9,4,15}
+b={5,39,0,4,3,8,1}
+
+print(a.symmetric_difference(b))
+print(a^b)
+
+#The two print statements above will return the same output of {0, 6, 39, 9, 10, 15}",2,"The alternative symbol for the union method is ""|""
+
+For instance:
+a={6,1,8,5,3,10,9,4,15}
+b={5,39,0,4,3,8,1}
+
+print(a.union(b))
+print(a|b)
+
+#The two print statements above will return the same output of {0, 1, 3, 4, 5, 6, 39, 8, 9, 10, 15}",2,"Unlike sets, elements of a frozen set remain the same after creation.
+In other words, frozen set, unlike regular sets support methods and operations that produce result without affecting the frozen sets or sets tomwhich they're applied.",3,"Yes, a module can have an attribute with the same name as the module.
+
+#For instance, consider the python script named calculator.py below
+def add(a,b):
+	print(a+b)
+	
+def subtract(a,b):
+	print(a-b)
+	
+def multiply(a,b):
+	print(a*b)
+
+def power(a,b):
+	print(a**b)
+	print(b**a)
+	
+def division(a,b):
+	print(a/b)
+
+def calculator(a,b):
+	print(b%a)
+
+#If calculator.py is imported as a module into another python script named main.py below
+import calculator
+calculator.calculator(3,8) #This will return 2
+
+Hence calculator.calculator is valid to be used in main.py",3,It returns the class type of calculator.py (i.e. it returns 'module' as the type of class to which calculator.py belongs),2,"It returns a valid list of names of all the attributes, properties and methods that are contained in the math module including default built-in functions(dunder names) without there values.",2,It returns a valid list of names of all the attributes that are defined in the calculator module including default built-in functions(dunder names) without there values.,2,"Python scripts are top level files which contains a collection of codes and commands which ate generally intended to be executed directly (I.e. run by itself) like a program.
+WHILE
+A module refers generally to a library of codes or a file that contains python definitions and statements which is meant to be imported by other pieces of codes. A python module may be executed as a script if __name__ = __main__",4,"Python standard library refers to a collection of tools and script modules that are built into python programming as a language in order to simplify programming processes, accelerate development and productivity, and also to eliminate the need to rewrite commonly used commands.",2,"__name__ refers to a built-in special variable that is always defined for every python file.
+
+It is commonly used to determine whether a python script or file is being run standalone by a user as a main module (This happens when __name__ is set to __main__) or the script is being imported as a module in another script (This happens when __name__ assumes the name of the script)",3,"The ""as"" keyword is always used to assign alias to an import statement.
+
+#For example, I can import the pprint module in this format
+import pprint as ppt
+
+#I can then be using ""ppt"" as the imported module name instead of ""pprint""
+
+#For instance:
+import pprint as ppt
+stuff = ['spam', 'eggs', 'lumberjack', 'knights', 'ni']
+stuff.insert(0, stuff[:])
+pp = ppt.PrettyPrinter(indent=4)
+pp.pprint(stuff)",4,"The ""from import x"" syntax is different from the regular import syntax in that it helps to import all of the module's names directly into the current file namespace. Hence, those names can be accessed directly as variables in the current file without the need to be referencing their module namespace each time before they can be used.",4,The approach constitutes an nth pattern because it increases the chances of name collisions/conflicts (i.e. it increases the chances of a name referring to two or more different things within the same program.,3,"It's generally recommended to use the with context when reading or writing to a file because it ensures that open file descriptors are automatically closed after the program execution (i.e. it leaves the with block), even in cases of error.
+
+Hence, it allows for a cleaner code and makes handling exception errors easier.",3,"The second argument to an open function represent the mode parameter.
+
+Some available options for the mode parameters include:
+""r"" mode is used for reading a file
+""w"" mode is used for writing to the beginning of a text file or overwriting any existing content in the file
+""x"" mode is used for creating a new file and writing into it
+""a"" mode is used for appending new contents to the current end of a file after the existing data
+""t"" mode refers to a text file, the default value of every file
+""b"" mode specifies that the type of file being written or reading is a binary file",4,"The ""w"" argument for an open function opens a file for writing such that data are positioned at the beginning of the file
+While
+The ""a"" argument for an open function opens a file for writing such that new data will be inserted at the current end after the existing data.",4,Python will simply creates the file,2,FileNotFoundError exception will be raised if python is unable to locate the requested file,0,A higher order function is a function that operates on other functions either by taking one or more functions as its arguments or returning a function as its result..,2,"The calculate function does not have a return value i.e. it was not written to return any result. Hence, the correct code should be:
+
+def multiply(a, b):
+  return a * b
+
+def divide(a, b):
+  return a / b
+
+def calculate(func, a, b):
+  return func(a, b)
+
+print(calculate(multiply, 10, 5))",3,"LEGB acronym stands for:
+
+Local scope
+Enclosing functions scope
+Global scope
+Built-in scope",2,"Local variables are variables that are declare and defined inside a function and are only accessible to the current scope
+
+While
+
+Global variables refers to variables that are defined and declare outside a function in usually on top.of a program, which holds their values throughout the lifetime of a program and they can be used by any functions defined for the program.",4,"A closure describes a program pattern in which a scope returns access to an enclosing scope name even if that enclosing scope no longer exists in the present memory. Simply put, closure helps to invoke a function outside it scope.",2,"The code will raise a NameError because  the function c doesn't defined the value of ""val"" to which it's to be returned. The function attempt to access the value if ""val"" which is defined outside it's own scope. val is defined as a global name in the above example, more reason why it'll throw a NameError.",3,"The python keyword that does this is termed ""nonlocal""",0,A decorator is defined as as a higher order function that booth accepts a function as an input and returns another function as an output. It symbol is @,2,When it's needed for a decorator function to accept any number of positional and/or keyword arguments,3,"@time_it
+def complex_operation():
+    for I in range(100000)
+        print(I)
+
+
+@time_it
+comoplex_operation()",3
+85,Ezekiel Ayano ,SNP_201070,Set is an unordered data type that does not permit duplicates ,2,{} ,0,The remove method returns an error message when the element to be removed is not there in the set but the discard method does not ,4,&,2,-,2,The difference method returns a new set with elements present in one set that isn't in the second set while the symmetric_difference method returns the inverse of the intersection between two sets (it returns elements present in one set that isn't in the other for the two sets involved) ,4,The union method returns the sum of all the elements involved while the intersection method returns the element common to both sets ,4,^,2,|,2,It freezes the elements in it meaning it makes them uniterable and unchangeable ,3,Yes,2,<class 'module'>,2,Nothing ,0,Nothing ,0,A script is a python file to be executed immediately while a module is an imported python script ,4,It is a collection of tools built into python to accelerate a developers productivity ,2,It is used to show a module or a script ,2,"as
+Import calculator as calc",4,It allows us to import specific elements or variables or functions from a module and not the whole module itself ,3,Cos it would import the whole module and might lead to clashes in variable names of the module and the script ,3,Cos it automatically closes the file after reading or writing ,3,"It shows the mode of operation
+""r"",  ""a""  and ""w"" ",4,"The ""w"" writes a new file while the ""a"" adds to an existing or new file. Everytime the ""w"" is invoked it creates a new file and writes to it but the ""a"" only creates a new file once if the specified file name does not exist and continually appends to it ",3,It would create the file and write to it ,2,FileNotFound error,2,An higher order function is a function that either takes a function as its argument or returns a function ,2,"The return function was not called on the def calculate and as such nothing is being returned
+def calculate(func, a, b):
+
+  return func(a, b)",3,"Local, Enclosing function, Global and Built in ",2,A local variable is defined within the body of a function but a global function is defined outside the body of a function ,4,It's a programming pattern in which a scope retains access to an enclosing scope's name ,2,Cos the name Val was first used in a local scope and it was not defined ,3,@,0,Decorators are higher order functions that both Accepts functioms as an argument and returms functions as an output ,2,"To make the function dynamic and able to cater for occurrences of multiple keyword arguments, arguments or a mixture of both ",3,"@time_it
+def complex_operation():
+
+    for i in range(100000):
+
+        print(i)
+Print(time_it(complex_operation) ()) ",3
+69,Mordi Anita,SNP_201036,it is a mutable unordered data structure that prevents duplicate values,2,"{ , }",0,The difference between remove and discard methods on a set is that the remove method raises a KeyError message when the argument is not found while the discard method does not return anything when argument isn't found,4,&,2,-,2,the difference between the difference and symmetric_difference methods is that difference method would return values exclusive to one of the set while the symmetric_difference methods returns all  values that both sets do not have in common.,4,the intersection method returns values that both sets have in common. while the union method returns all values in  both sets without repeating the same values found in two sets twice.,4,^,2,|,2,A frosenset is an immutable set so it can be used as a key for dictionary,3,nope it cant be used.,0,<class 'module'>,2,"'__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'my_function', 'math']",1,"'__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'my_function', 'calculator']",1,a module can be imported but not a script,0,script modules,0,it is used to assign the name of a module.it represents the _main_,0,"as
+e.g
+import calculator as calc",4,it is different because it is used to get the attribute of a module directly.,3,because of different modules that might have the same attribute name.,3,with open,0,"it represents the mode.what you want to be done to the file i.e either read,write or append",4,"""w"" is used for writing in the file, that is writing a whole new thing in an existing file or a new file.
+""a"" its is used to append text into a file",4,it will create a new file,2,NameError,0,a higher order function is a function that accepts a function as an argument and returns a function as a return value,2,"the func(a,b) is not returned",0,Local/enclosing functions/global/built-in,2,"local variable is a variable enclosed in a function, it doesn't exist outside that function. while a globaal variable exist throughout the whole program",4,it is a programming pattern in which a scope retains access to an enclosing scopes name,2,because at the point the val variable was not assigned to any object.,3,global,2,it is a programming pattern where you wrap something in something else,1,because input values would be needed,1,"def time_it(func):
+       def inner():
+            print(""the timer has started"")
+            func()
+            print(""timer stopped now"")
+       return inner
+@time_it
+def complex_operation():
+
+    for i in range(100000):
+
+        print(i)
+
+complex_operation()",3
+81,Ademola oladipupo,SNP_201015,A set is a mutable and unordered data structure that prohibit duplicate values i.e they do not want duplicate value in the data.,2,Curly braces {},0,The remove method raise an error message once the value we are looking for is not in the set while a discard method do not but continue,4,&,2,-,2,Difference method return a new set that is present in set1 and not set2 while symmetric difference method return a new set that are not shared by both set.,4,Union method return a new set with combination of all element in both set while intersection method return element find in both set.,4,^,2,|,2,Frozenset set offer an immutable characteristics. Whereby the set in frozenset cannot be add or remove,3,Yes,2,"A class module is shown. e.g
+<class module>",2,All the functions present in the math module is shown on the terminal.,2,Shows all it content,1,A script describe a python file that is expected to be executed while a module is any python file which contains a code that can be input,4,It is the collection of python codes save as module that can be accessible to a programmer during programming which remove the need to rewrite the script from scratch.,2,"It is use to determine whether a script is being run as the main module or being run as an imported script.
+It is use to determine where a script is being run",3,"as
+import datetime as dt",4,It select a specific function in the module we want to work on. While regular import import all the functions in the module.,4,It might be bad if another module as the same name of the function we are importing.,3,It is recommended because if there is a bug in between the line of code before the normal close method this can lead to the file not properly open,3,Represent everything that we want to do with the file we open.,0,The 'w' indicate writing to a file we just created while 'a' indicate we want to add or append to the file. It is use to update files,4,The python will create the file and open it in write mode,2,Nameerror,0,A high order function is one that either accepts a function as an argument or return a function as a return value,2,"The calculate function was not return.  The func(a, b) was not return to the function.",3,"L = local
+E= enclosing function
+G= global
+B= built-in
+",2,A variable is Said to be global if it is declared outside a function while a local variable is declared within a function,4,Enclosure describe a programming pattern in which a scope refrain access to an enclosing scope name,2,I,0,Global,2,It is a design pattern in Python that allows user to add new functions to an already existing ones,2,So that it can accept any argument,3,N,0
+81,Abiola Hanbali Adisa ,SNP_201008,"a set is a mutable, unordered data structure that prohibits duplicate values or repetition of values ",2,"by converting a list to set using this 
+print(set([list])) 
+#OR by just declaring it like this
+set = { element, element} ",2,"even though both are used to delete elements from a set but with remove method if the element does not exist, python raises a key error while with discard method, python will simply just move on if the element does not exist",4,& is the alternate symbol for intersection ,2,#NAME?,2,"difference is used to identify unique elements of one set, what you can find in one set but not in another WHILE 
+Symmetric difference is used to identify elements that is not common in two sets",4,"union method is used to combine two different sets together while
+intersection method is used to identify elements of sets that is found in two sets
+the alternate symbol of union set is |,
+the alternate symbol of intersection is & ",4,alternate symbol for symmetric_difference is ^,2,| alternate symbol for union method ,2,frozenset refers to a set that cannot be mutated and its the only set that can be converted to a dictionary while a regular does not offer any of these ,3,"I) yes
+ii) import calculator 
+iii) no
+",1,module ,0,it's going to list attributes of objects inside the math module ,2,it's going to list all the attribute objects inside the calculator module ,2,"a module is a python file that is meant to be used by another 
+a script is a python file that is to be executed directly ",4,collection of tools built into a language to accelerate developer productivity ,2,"it is a special variable automatically generated by python and it stores attribute of a module and it is used by the python interpreter, if the module (the source file) is the main program, it sets the special __name__ variable to have a value “__main__”. If this file is being imported from another module, __name__ will be set to the module’s name",3,"the keyword is ""as""
+example 
+import math as m",4,"""from module import x"" is different from regular import syntax because ""from module import x"" means that from module import a function saved as x inside the module
+that is it is used to call for a specific file or files inside a module while regular import syntax will call the whole files saved inside a module ",4,because it constitutes an anti pattern and causes name collision and name collision is when a name is referring to two different things inside a module ,3,"because it closes the file automatically when we are done reading or writing to it without using close() function, file.txt.close()",3,"it contains the processing mode, what we want to do with the file
+the available options include read, write and append ",4,"""w"" is write to a file and ""a"" is append to a file 
+""w"" will create a new file if the file we open to write is not existing but will overwrite it completely before returning a new one if the file is existing 
+""a"" will add to the content of the file without overwriting the existing content ",4,it will create a new file and return it with the new content ,1,it will bring error,0,higher order function that accepts a function as an argument or returns a function as return value ,2,"def calculate is not asked to return any value because return is not provided with func(a, b) ",3,"L is local
+E is enclosing function 
+G is global 
+B is built in 
+",2,"a local variable is a variable within a function or block and cannot be accessed anywhere outside the block of the function
+global variable is a variable that exists outside a block and can be accessed anywhere in the program ",4,a closure is a programming pattern in which a scope retains access to an enclosing scope's names ,2,"before is Val is not properly declared, it should have been declared before defining the functions
+also not properly indented ",3,from module import x ,0,a decorator enhances a function with a additional feature without changing its function ,1,w,0,"def complex_operation() :
+      for i in range(10000, - 1):
+           print i
+",0
+88,Ademola Agboola,SNP_201014,"A set is a mutable unordered data structure that prohibits duplicate values, set can only contain a unique elements, like dictionary it is denoted by a pair of curly bracket {}  e.g {1, 2,3, 4}
+",2,"The syntax  to create set is not using a of curly braces but  invoking a set function 'set()' e.g
+set((1,2,4,3,6,3)) => {1,2,3,4,6}
+",2,"Both are methods use in deleting elements from a set. The remove() method raises a key error exception if the value  you  are looking for in the set can not be found, while discard method  will not raise such exception  it will  just move on e. g
+names={""Bash"",""Rayshee"", ""Bright"",""Reyes""}
+names. remove(skales)
+print(names)=> keyError 'skales'
+names.discard(skales)
+Print(names)=>{""Bash"",""Rayshee"", ""Bright"",""Reyes""}",4,"The alternate symbol for intersection() method is ""&""  e.g
+X = {1,2,3} Y= { 3,4,5} 
+X.intersection(Y) ={3} or X&Y ={3}",2,"The alternate symbol for difference() method is ""-"" e.g  a.difference(b) = a-b",2,"The difference method shows the difference  between two sets  that results in a third set with the element from the first set, that are not present on the second e.g  A= {1,2,3} ,B={2,3,4} 
+A.difference(B) = {1} and B.difference(A) = {4}
+the symmetric_difference  method on the other hand  is the difference between  two sets  that results in a third set  with the elements from both sets that are not present  on the other e.g
+ A= {1,2,3} ,B={2,3,4} 
+A.symmetric_difference(B) => {1,4}
+",4,"intersection method gives element(s) two  or more sets  have in common 
+union  method gives all the elements from two or more sets
+x ={""a"",""b"", ""c""}
+y={""b"",""d"",""e""}
+x.intersection(y) => {b}
+x.union(y) => {a,b,c,d,e}",4,"the alternate symbol for the symmetric_difference()method is ""^"" e.g a.symmetric_difference(b) = a ^ b",2,"The alternate symbol for the union method is ""l"" e.g A.union(B) = A l B",2,"A frozen set is an immutable set, value can not be added or removed from a frozen set once it has been declared. It is invoked using: frozenset(), whereas  a regular set is mutable and value can be added or removed from the set. due to the mentioned attributes  a frozen set can be used as a dictionary keys because it is immutable where as a regular set Is mutable and can not be used as dictionary's key.",3,yes,1,it will return a module ,1,"it returns all the attribute of the math  module 
+Print(dir(math))",2,"returns all the attribute of the module ""calculator""
+Print(dir(calculator))",2,"Module  are top level files intended for execution, script are meant to be executed. If name is printed in a script it returns main where as it returns  the name of the module if it's in a module.",4,Python Standard Library is a collection of script modules accessible to a Python program to simplify the programming process and removing the need to rewrite commonly used commands.They can be used by 'calling/importing' them at the beginning of a script,2,"_name_ pronounces as ""dundername"" 
+name variable is used to determine  wether a file is being used as a script or a module.If name is printed in a script it returns main where as it  returns the name of the module if it's in a module.",3,"""import"" and ""as""
+ calculator as calc, pandas as pd, datetime as dt e.g
+Import calculator as calc
+Import datetime as dt
+Import pandas as pd
+print(calc.add(3,5))=> 8
+print(dt.datetime(2020,4,13))=> 2020-04-13 00:00:00",4,"from module import* is used to import all of the name values in a given file , while the regular  import ,imports specific attribute from module directly into the current file 
+E.g.1.from calcualator import*
+2.import calculator as calculator 
+The 1 above imports all the attributes  while 2 import a specific attribute and more explicit.",4,it is discouraged to use the from module because it makes  available all of the names in the file and it increase the chances of name clashing/duplication.explicit is more than implicit. It is not specific enough ,3,"Opening files using the with statement is generally recommended because it ensures that open file descriptors are closed automatically after program execution.
+with open(filename, ""w"") as file_object:
+      file_object.write(""hello world"")
+The with statement will execute as below
+open(filename, ""w"") as file_object:
+     file_object.write(""hello world"")
+     file_object.close()",3,"The second argument of the open function represents the mode and the available options are ""w"", for write ""r"" for read ""a"" for append. 
+with open(filename, ""w"") as file_object: 
+with open(filename, ""a"") as file_object:
+with open(filename, ""r"") as file_object",4,"The difference is that ""w"" processing mode  is used to write to a file ""a"" is also use to write to the file.  ""w"" mode processing  create a new file if it doesn't exist in the directory yet, but if the file currently exist it overwrites or erase the the previous content and replace with the new one, However ""a"" is used to append to a file . That is it is used to add content to a file without overwriting an existing content. 
+with open(filename, ""w"") as file_object: 
+with open(filename, ""a"") as file_object:
+with open(filename, ""r"") as file_object",4,"The file will be created with the file name provided
+",2,"It raises an IOError
+No such file or directory :""name of file""
+",1,"Higher order function is a function that either accepts a function as an argument  or returns function as a return value. 
+",2,"def multiply(a,b):
+	return a*b
+def divide(a,b):
+	return a/b
+def calculate(func,a,b):
+	func(a,b)...........*
+print(calculate(multiply,10,5)). The code will return ""None"" and not 50
+Because the ""return"" keyword on the asteriked line. = is missing 
+.",3,"LEGB means Local Enclosing Functions Global Built-in
+",2,"Global variable  is a variable that is assigned outside a function,  local variable is a variable that assigned inside  a function  and it's local to that function 
+Tyrone =50.......global variable 
+def ticket_function():
+     Xup=sup.......local variable",4,A closure is a programming pattern in which a scope retains access to an enclosing scope's names.,2,"#Global scope
+def a():
+#Local scope
+	def b():
+#Enclosed
+		def c():
+			return val
+		return c()
+	return b()
+print(a())
+val=""hello""
+The above code will raise NameError Exception because it doesn't follow the LEGB rule of python name  variable name searching,  in the above code python will search for the Val variable name using the order of scope Local, Enclosing,  Global, Built-in #LEGB if the variable  ""val"" is placed in any of the  commented scope above the code will not return NameError",3,'@',0,"A decorator is a higher order function that both accepts a function as an input and then returns another function  as an output,it enhances a function with additional features without changing its core functionality.",2,this will enable it to accepts both positional and keyword arguments as much as it can,3,ggggg,0
+86,Ademola Agboola,SNP_201014,"A set is a mutable unordered data structure that prohibits duplicate values, set can only contain a unique elements, like dictionary it is denoted by a pair of curly bracket {}  e.g {1, 2,3, 4}
+",2,"The syntax  to create set is not using a of curly braces but  invoking a set function 'set()' e.g
+set((1,2,4,3,6,3)) => {1,2,3,4,6}
+",2,"Both are methods use in deleting elements from a set. The remove() method raises a key error exception if the value  you  are looking for in the set can not be found, while discard method  will not raise such exception  it will  just move on e. g
+names={""Bash"",""Rayshee"", ""Bright"",""Reyes""}
+names. remove(skales)
+print(names)=> keyError 'skales'
+names.discard(skales)
+Print(names)=>{""Bash"",""Rayshee"", ""Bright"",""Reyes""}",4,"The alternate symbol for intersection() method is ""&""  e.g
+X = {1,2,3} Y= { 3,4,5} 
+X.intersection(Y) ={3} or X&Y ={3}",2,"The alternate symbol for difference() method is ""-"" e.g  a.difference(b) = a-b",2,"The difference method shows the difference  between two sets  that results in a third set with the element from the first set, that are not present on the second e.g  A= {1,2,3} ,B={2,3,4} 
+A.difference(B) = {1} and B.difference(A) = {4}
+the symmetric_difference  method on the other hand  is the difference between  two sets  that results in a third set  with the elements from both sets that are not present  on the other e.g
+ A= {1,2,3} ,B={2,3,4} 
+A.symmetric_difference(B) => {1,4}
+",4,"intersection method gives element(s) two  or more sets  have in common 
+union  method gives all the elements from two or more sets
+x ={""a"",""b"", ""c""}
+y={""b"",""d"",""e""}
+x.intersection(y) => {b}
+x.union(y) => {a,b,c,d,e}",4,"the alternate symbol for the symmetric_difference()method is ""^"" e.g a.symmetric_difference(b) = a ^ b",2,"The alternate symbol for the union method is ""l"" e.g A.union(B) = A l B",2,"A frozen set is an immutable set, value can not be added or removed from a frozen set once it has been declared. It is invoked using: frozenset(), whereas  a regular set is mutable and value can be added or removed from the set. due to the mentioned attributes  a frozen set can be used as a dictionary keys because it is immutable where as a regular set Is mutable and can not be used as dictionary's key.",3,yes,1,it will return a module ,1,"it returns all the attribute of the math  module 
+Print(dir(math))",2,"returns all the attribute of the module ""calculator""
+Print(dir(calculator))",2,"Module  are top level files intended for execution, script are meant to be executed. If name is printed in a script it returns main where as it returns  the name of the module if it's in a module.",4,Python Standard Library is a collection of script modules accessible to a Python program to simplify the programming process and removing the need to rewrite commonly used commands.They can be used by 'calling/importing' them at the beginning of a script,2,"_name_ pronounces as ""dundername"" 
+name variable is used to determine  wether a file is being used as a script or a module.If name is printed in a script it returns main where as it  returns the name of the module if it's in a module.",3,"""import"" and ""as""
+ calculator as calc, pandas as pd, datetime as dt e.g
+Import calculator as calc
+Import datetime as dt
+Import pandas as pd
+print(calc.add(3,5))=> 8
+print(dt.datetime(2020,4,13))=> 2020-04-13 00:00:00",4,"from module import* is used to import all of the name values in a given file , while the regular  import ,imports specific attribute from module directly into the current file 
+E.g.1.from calcualator import*
+2.import calculator as calculator 
+The 1 above imports all the attributes  while 2 import a specific attribute and more explicit.",4,it is discouraged to use the from module because it makes  available all of the names in the file and it increase the chances of name clashing/duplication.explicit is more than implicit. It is not specific enough ,3,"Opening files using the with statement is generally recommended because it ensures that open file descriptors are closed automatically after program execution.
+with open(filename, ""w"") as file_object:
+      file_object.write(""hello world"")
+The with statement will execute as below
+open(filename, ""w"") as file_object:
+     file_object.write(""hello world"")
+     file_object.close()",3,"The second argument of the open function represents the mode and the available options are ""w"", for write ""r"" for read ""a"" for append. 
+with open(filename, ""w"") as file_object: 
+with open(filename, ""a"") as file_object:
+with open(filename, ""r"") as file_object",4,"The difference is that ""w"" processing mode  is used to write to a file ""a"" is also use to write to the file.  ""w"" mode processing  create a new file if it doesn't exist in the directory yet, but if the file currently exist it overwrites or erase the the previous content and replace with the new one, However ""a"" is used to append to a file . That is it is used to add content to a file without overwriting an existing content. 
+with open(filename, ""w"") as file_object: 
+with open(filename, ""a"") as file_object:
+with open(filename, ""r"") as file_object",4,"The file will be created with the file name provided
+",2,"It raises an IOError
+No such file or directory :""name of file""
+",2,"Higher order function is a function that either accepts a function as an argument  or returns function as a return value. 
+",2,"def multiply(a,b):
+	return a*b
+def divide(a,b):
+	return a/b
+def calculate(func,a,b):
+	func(a,b)...........*
+print(calculate(multiply,10,5)). The code will return ""None"" and not 50
+Because the ""return"" keyword on the asteriked line. = is missing 
+.",3,"LEGB means Local Enclosing Functions Global Built-in
+",2,"Global variable  is a variable that is assigned outside a function,  local variable is a variable that assigned inside  a function  and it's local to that function 
+Tyrone =50.......global variable 
+def ticket_function():
+     Xup=sup.......local variable",4,A closure is a programming pattern in which a scope retains access to an enclosing scope's names.,2,"#Global scope
+def a():
+#Local scope
+	def b():
+#Enclosed
+		def c():
+			return val
+		return c()
+	return b()
+print(a())
+val=""hello""
+The above code will raise NameError Exception because it doesn't follow the LEGB rule of python name  variable name searching,  in the above code python will search for the Val variable name using the order of scope Local, Enclosing,  Global, Built-in #LEGB if the variable  ""val"" is placed in any of the  commented scope above the code will not return NameError",0,'@',0,"A decorator is a higher order function that both accepts a function as an input and then returns another function  as an output,it enhances a function with additional features without changing its core functionality.",2,this will enable it to accepts both positional and keyword arguments as much as it can,3,ggggg,0
+84,David Mobolade,SNP_201054,"This is a data structure that is mutable but does not allow two or more values that ate the same, that is every value must be unique no duplication is allowed",2,"{}
+",0,The major difference is that  'remove' runs into an error if the object is not in the set while 'discard' does not crash the program,4, &,2,-,2,"The difference method  creates or returns a new set with objects that exclusive to the set it was called upon while the symmetric difference return everything in both set except objects that they have in common, that is it returns everything except the intersect.",4,The union method creates a new set  which includes a combination of everything in set A and B while intersection method only create a new set that has objects that are in common to both set.,4,^,2,|,2,"Normally set is a mutable object, but on the contrary, a frozen set is immutable. It is frozen or rigid. As a result of this methods that are used in editing object cannot be called on a frozen set",3,Yes it is ,2, ,0,"""c:\Users\Slingshots\Desktop\Py\main.py""
+
+
+It returns the location of the python script in which the math module is been imported into on the system",0,The location of the calculator.py file,0,"A script is the .py file where the program is written while a module is a body of function encapsulated in one 'box' that makes coding easier.
+A module is imported into a scrip while a script cannot be imported into a module.",4,This is a series of modules that comes with python program on installation but has to be imported as a module whenever it us needed (this is to save computer memory space),2,The dunder name is used to know if a program is the main script or the module 'script',3,"The 'as' keyword
+
+Import calculator as calc
+
+This means that when ever I want to make use of the module calculator, I can simply type cal.add(3,6) for example.",4,"It is used to import specific things form the module.
+For example, in calculator.py
+Instead of importing everything with 'import calculator' I can simply type: from calculator import add.
+This will allow me simply call 'add()' in my code instead of 'calculator.add()'",4,"One of the reason why it is bad is because of the fact that * imports all the attributes in a module, now if one is to import more than one module, it may lead to duplicity of names in different modules, now this will cause confusion for both python and a third party that wants to read the code.
+And that is why it is better to be explicitly state what one is doing in a code. In fact the writer of the code might become confused if he or she comes back after a while to read the code. So to avoid this, it is advised not to use this method.",3,"It is recommended to use the 'with context' to avoid losing data or using up memory in the computer, this is because irrespective of an error in a code, the 'with context' will open a file and still close it.",3,"The second argument is the mode, it is meant for what will be done with the file. Three options are available, the read (r), write (w) and append (a).
+The read is used to read a file, write is used to create a file or overwrite a file while append is used to add to a file that is add to the end of a file.",4,"""w"" which is write creates a new file if the file doesn't exist or it overwrites a file if the does exist while ""a"" is append it is used to add to the end of a file, that is it is used to write into a file with out deleting what is already existing in the file, it simply adds to it",4,It simply creates a file with the name given,2, File not found error,2,This is a function that takes in a function as an argument or returns a function,2,"You did not return func.
+Your code should look like this:
+
+def multiply(a, b):
+	return a * b
+
+
+
+def divide(a, b):
+  return a / b
+
+
+
+def calculate(func, a, b):
+  return func(a, b)
+
+
+
+print(calculate(multiply, 10, 5))
+",3,"Local scope
+Enclosed scope
+Global scope
+Built-in scope",2,"Local variable is declare within a function while global variable is declared outside a function in the script (global variable stands alone).
+Local variable cannot be called outside the function in which it was declared but global variable can be call both outside and inside functions it was not declared in.",4,This is a pattern in programming where a scope is still able to hold on to an enclosing scope name,2,"Although val is a global name, it is supposed to be declare before the function, this is because Python runs the code step by step, and as at the time it got yo print(a()), 
+There's no declaration for val
+
+....,..................
+val = ""Hello""
+def a():
+  def b():
+    def c():
+      return val
+    return c()
+  return b()
+
+
+
+print(a())
+
+_______________________________
+
+#val = ""Hello""
+def a():
+  def b():
+    def c():
+      return val
+    return c()
+  return b()
+
+val = ""Hello""
+
+print(a())
+_______ ____________
+
+
+The two blocks of code written above will run. The point is, val should be declared before the print function",3,global,2,A decorator is a higher order function that accepts a function as input and also returns a function as output,2,"Because when one invoke the wrapped function, it is the decorator that is actually invoked not the wrapped function. And if *args and **kwargs is not defined it will run into an error because the function 'is not' expecting an argument",2, ,0
+89,Yusuf Emmanuel,SNP_201199,"A set is a mutable, unordered data structure that prohibits duplicate values.",2,"{ } it uses the curly bracket the difference is that it does accept key-value pair like a dictionary
+
+stocks = { 'meat', 'fish' }",1,Remove method raises a key exception error while discard does not,4,$,0,-,2,Difference method returns the element present in the set called on but not on the other set while the symmetric method is the element that is found in either of the two set but not in both of them,4,Intersection returns element that is found in both set while the union is the combination of both set. ,4,^,2,|,2,Frozen set value can not be added nor removed,3,yes,2,element in the imported module,2,all the methods in the module when printed out,2,it prints out all the method in the module including self-defined and system-defined methods,2,A script is a python file that is meant to be executed immediately while module is any python file with .py extension,4,A collection of tools built into the language to accelerate the developers productivity,2,"it is the dundun name module, it declares whether a file is been used as a script or a module.",3,"as keyword is used
+
+import calculator as calc 
+",4,"The from keyword is used to specify the attribute needed in the module, it is used to filter out the needed part of the module ",4,There may be more than one module with thesame attribute name,3,if the ordinary open method is used it may lead to the file not properly closed or damage to the file if there is error in the code before the close method,3,"The type of operation to be done on the file
+
+'r' - read
+'w' - write
+'a' - append",4,'w' add text to the file while 'a' add text to the end of the file content,4,it brings out a Name Error,0,Name Error,0,it is a function that either accepts a function as an argument or a function as a return value ,2,there is no return statement in the calculate function,3,Local / Enclosing Function / Global / Builtin,2,"Global variable a variable that is assigned outside a function while a local variable is a variable that is assigned inside a function, the can only be accessed inside the function alone",4,A programming pattern in which  a scope retains access to an enclosing scopes name ,2,the variable is not declared before been called,3,global,2,"A decorator is an higher-order function, it applies the same effect as the global variable to the function",2,to allow the function to accept any number of arguments,3,"def time_it():
+    time = range(50)
+    def inner():
+        print(f""it took the function {time} to start the timer"")
+
+    return inner()
+
+@time_it
+def complex_operation():
+
+    for i in range(100000):
+
+        print(i)
+
+print(complex_operation())",3
+94,Blessing Agyei Kyem,SNP_201045 ,"A Set is an ordered, mutable data structure that prohibits duplicate values(repeated values). The elements in a set must be immutable objects. A set is represented like a dictionary using curly brackets. Example {1, 2, 4, 7}",2,set( ),2,"Both are used to remove an element from a list
+
+The difference is that the remove method will give out an error if the element you want to remove is not found in the set but the discard method will not give out an error or would return nothing if the element isn't found in the set ",4,&,2,-,2,"The difference method returns element(s) that is/are found in the Set being called on but not found in the set being passed on as an argument.
+Example
+A = {1, 2, 4, 8, 10}
+B = {1, 3, 7, 10}
+print(A.difference(B)) # The output would be {2, 4, 8} because 2, 4, 8 is found in Set A only but not B
+
+The symmetric_method returns element(s) that is/are found in either of the two sets but not both. It doesn't return element(s) shared by both sets. It takes elements that are found exclusively or uniquely in either of the two sets   
+Example 
+C = { 1, 4, 6, 8, 5, 9}
+D = {1, 6, 3, 7, 10}
+print(C.symmetric_method(D)) #The output would be {4, 8, 5, 9, 3, 7, 10} because 4,8,5,9,3,7,10 are found exclusively in C and D. To simplify, it takes elements found only in set C and also elements found only in set D 
+
+",4,"The union method merges all the elements that is found in both sets and removes the duplicates 
+For example
+A = {1, 2, 3}
+B = {2, 4, 5}
+print(A.union(B)) # output would be {1, 2, 3, 4, 5}. Because 2 is a duplicate one would be removed
+
+The intersection method returns element(s) that is found in both sets.
+Example
+C = {2, 7, 9}
+D = {2, 4, 5}
+print(C.intersection(D)) #output would be {2} because 2 is found in both set C and set D  
+",4,^,2,| ,2,"A frozenset can be used as a key in a dictionary because it is immutable but a regular set can't be used as a dictionary key. You can't add, delete, or remove elements from a frozenset but you can do that with a regular set  ",3,"Yes 
+Supposing I was using my python script and inside the script I have calculator as my attribute or variable which has been assigned to let's say a number 20 and my script has been saved as calculator.py. 
+#calculator = 20
+
+After importing calculator in my main.py script, I can access the calculator attribute because it is found inside the calculator module
+example(coding in the main.py script)
+import calculator
+print(calculator.calculator)  #we can access calculator.calculator. The output would be 20 ",3,A module object,0,A list of all the attributes and methods found in the math module ,2,It would return only calculator as an attribute because it was the only attribute in the calculator module,1,"A script is a python file that is meant to be executed or run directly but a module is a python file that is run by another file(script)
+
+Example 
+Supposing I type my code into an editor and save it by the name blessing.py and run the file directly, blessing.py becomes my script because it has been run directly. The script is the current file you are working with.
+                                                         BUT
+If I open a new file and save it as main.py and I import blessing, blessing now turns into module because it is being run by another file(script). main.py is now a script because I would run it directly 
+
+
+
+",4,Python standard library is a container of tools that has been built in into Python to help ease and make work very easier. For example the math module in Python standard library allows you to access a wide variety of math tools like logarithm to ease your calculations without you creating them yourself,2,__name__ is a special variable(method) and is commonly used to return the name of a module ,2,"as 
+
+Example
+import time as t ",3,"import syntax would make everything in the module available including all the attributes but the from module import x syntax where x is an attribute(s) would make only the attribute(s) you specified to be available 
+
+In other words the import syntax allows you to access everything(all attributes) in the module but the from module import x allows you to have access to your specified attributes you imported 
+
+",4,"Because if you import multiple modules, there can be a collision of name attributes in the sense that different modules may have the same attributes. 
+
+And also, if I have a lot of attributes in the module, I won't be able to know the kinds of attributes in my module.
+Again, it prevents other developers from knowing what actually is going on in your code. This violates the rule in Zen of Python which says explicit is better than implicit ",3,"It helps you to create a file object(wraps your .txt file into a file object) and automatically closes the file after execution and a file has a less chance of being corrupted 
+",3,"It represents the processing mode(What we really want to do with the file)
+The available options are :
+""a""  which means append
+""w"" which means write
+""r"" which  means read 
+
+
+",4,"""w"" writes to a file. If the text file already consists of texts(already exist) it would overwrite the contents of the file with the new text but if it is writing to the text file for the first time, it would create the new file and just add your text to the file 
+                                               
+                                                                        BUT
+
+""a"" appends to a file. It doesn't overwrite the contents of the file but adds your new text to the contents of the text file if that file already contain texts(if your file already exist). If you are appending to the file for the first time, it would create the new file and add your text to it 
+
+",4,It would create the new file and write to it ,2,FileNotFound Error ,2,A function that accepts a function as an argument and returns a function as a return value ,2,"This is because we didn't return func(a, b) after creating the calculate function 
+It should be:
+def calculate(func, a, b):
+     return func(a, b)",3,Local/Enclosing Functions/Global/Built-in ,2,"A local variable is the variable found in the local scope and is declared inside a function but the global variable is found in the global scope and is declared or accessed outside a function. It has an infinite access
+Example
+a = 12
+def num( ):
+  x = 23
+
+Because a is defined outside a function, a is a global variable but x is a local variable because it is declared inside a function (num)
+",4,It is a paradigm or a pattern in which a scope retains access to enclosing scope's names ,2,"This is because val exists outside the print function invocation on the function.  When you call a function after creating or describing it, anything below the function will not be executed
+",3,global keyword,2,A high order function that both accepts a function as an input and returns another function as an output.,2,"So that the function would be able to accept any number of arguments be it a tuple or dictionary. This affects the inner function in the decorator equally.
+",3,"import time
+import functools
+def time_it(func):
+    @functools.wraps(func)
+    def inner( ):
+        start_time = time.time( )
+        func( )
+        end_time = time.time( )
+        final_time = end_time - start_time
+        print(f""It took {round(final_time,4)} secs to run {func.__name__}"")
+    return inner
+        
+     
+
+@time_it
+def complex_operation( ):
+    result = 0
+    for i in range(100000):
+        result += i
+    return result
+    
+        
+
+complex_operation( )
+
+        
+",5
+73,Anyagre Alexander Atiah ,SNP201032,A set is a mutable unordered data structure that forbid duplicate values. ,2,{ } or set() ,1,The remove method raises value error when the value to remove does not exist but the discard method does not raise value error when the value does not exist. ,4,&,2,The minus symbol - ,2,The difference refers to only values found in one set that are not in the other set. The symmetric_difference refers to all the non-comon elements in both the sets that is members in sets  apart from the intersected members. ,4,The union combines or groups elements in both sets to form a universal set(a set containing all sets elements) while the intersection method filter only elements common in both sets. ,4,"The symbol "" ^"" ",2,"The symbol ""|"" ",2,A frozenset set can be used as dictionary key as a result of its unique and immutable nature but a regular set cannot as it is mutable. ,3,Yes but it is anti_pattern to do that,2,A model ,0,math module ,0,calculator module ,0,A script is a valid literal or statement(s) that is meant to be executed directly but a module contains codes or statements to be used by other programs in a programming language. ,4,It is a collection of tools or codes built in a language to accelerate programming productivity. ,2,It used to determine whether a code is a model or script ,2,"The ""as"" 
+Import date_time as dt",4,It imports a specified attribute in a module but regular import  imports a module and not attributes in module. ,2,Because you might not know the attributes included therefore you might have two the same names referenced to two different things of which you will not know the one in use. ,2,"To avoid damaging files when open, due to bugs the program or the file might not be closed properly. ",3,"It represents the operating mode.
+We have :
+1.read(r)
+2.write(w)
+3.append(a)",4,"The ""w"" write  mode is use to write to a file. It override data if it exists or create new data if does not exist but the ""a"" append  adds new data to the file without overriding any existed data and if no existed data it creates. ",4,It creates new data,1,File type error ,0,It refers to any function that accepts another function as an argument or return another function as a return value. ,2,The function calculate lacks a return value in addition to invocation syntax error ,3,It means Local Enclose Global Built-in  ,2,A global variable is a variable that can be accessed at any part of a current file within a program but a local variable can only be accessed within the local scope it has been declared. ,4,It refers to a pattern in programming where a function retain access to enclosed scope variable(s). ,2,Because Val is not defined or declared in any of the functions. ,2,Friend,0,It refers to functions that adds more features to other functions. ,1,To allow inclusion of of arguments to these functions. ,1,"complex_operation(time_it) :
+
+Or
+@time_it
+Complex_operation()
+    ",0
+84,Temitope Osifalujo,SNP_201188,"A set is a mutable, unordered data structure that prohibits duplicate values.",2,"set() or { , }, The comma inside the curly braces is to separate the element in the set",2,"The Remove method raises a keyerror exception of the value you are looking for if its not there, while the discard method will not raise an exception ",4,&,2,-,2,The difference method returns a new set of element that are present in the set that is called on but not present in the set that is passed as argument while the symmetric_difference method returns a set of elements that are not shared by both sets,4,The union method combines the sets and remove the duplicate while intersection method returns the elements that are found in both sets,4,^,2,|,2,"Values cannot be added or removed from a frozenset, once it is declared and if we try to mutate a frozenset, it will give an AttributeError",3,This will cause a name collision,3,<class 'module'>,2,.,0,.,0,A script is a python  file that is executed directly while a module is any python file with py extension,4,It is a collection of tools built into a language to accelerate developer productivity,2,It allows us to determine whether a file is been used as a module or a script,3,"as
+import calculator as calc",4,The from syntax imports specific attributes directly,4,It increases the chances of name collisions,3,"It is recommended because when closing a file, if a bug pops of in the program, it won't close properly which could lead to loss of data, so therefore with 'with context', it closes properly",3,"The second argument to the open function represents the processing mode.
+Read (r), Write(w) and append(a)  ",4,"The ""w"" argument, if the file exists, it replaces it while the 'a' adds to the file",4,Python will write it,1,FileNotFound Error,2,A function that either accepts a function as an argument or returns a function as a return value,2,"You did not return func(a,b)",3,Local/Enclosing functions/Global/Built-in,2,A global variable is assigned outside of a any function while a local variable is assigned inside a function,4,A closure is a programming pattern in which a scope retains access to an enclosing scope's names,2,"Because the val was out of scope. it was not even assigned in the program, it was assigned after ",3,change_stuff(),0,A decorator is a higher order function. A decorator enhances a function with additional features without changing its core functionality ,2,So we won't get a type error,0,.,0
+81,Akindele Malak ,SN_201123 ,A set is a mutable data structure which does not accept duplicates and is unordered,2,The use of curly bracket { } and comma,1,"The remove method displays error when the element to be removed is not among the set
+The discard method does not raise or display an error ",4,&  can be used for intersection ,2,Alternate symbol is -(minus),2,Alternate symbol is (^),4,"Union is the joining together of elements in both set
+Intersection  is the element that are common to both set",4,Alternate symbol is (^),2,Symbol is vertical pipe (|),2,A frozenset is immutable and can be used as a dictionary key,2,Yes,3,Name error ,0,J,0,7,0,A script is a python file which is to be executed  directly  while a module is a file which is to be used by other files,4,It is a collection of tools which is built into a language to facilitate the productivity of a developer ,2,It is used to determine if a file is used as a module or as a script,3,"The ""as"" keyword
+Import calculator as calc",4,The from module import syntax helps you to import specific attributes from a module,4,It might be bad because it can lead to confusion when two modules have the same name of attributes ,3,It helps to close the file when you're done reading or writing it,3,"It represents the processing mode which allows us to specify what we want to do.the other options are ""r"" for read,""w"" for write and ""a"" for append ",4,"""W"" is for writing while ""a"" is for append ",4,It will create the file ,2,"""File not found"" error",2,This is a function that accepts a function as an argument or returns a function as a return value ,2,The return value was not invoked in the code ,3,Local/Enclosing function/Global/Built -in,2,Variable assigned outside of a function is a global variable while local variables is assigned inside of a function ,4,It is a programming pattern which maintains access to a scope name,2,The variable val is not in the function ,3,For,0,A decorator is an object used to modify a function or a class,2,Ar,0,.,0
+88,Ibukunoluwa Jeremiah Ajoh,SNP_201093,"A Set is a mutable, unordered data structure that prohibits duplicate values. ",2,{} Curly Brackets ,0,"The major difference between remove and discard methods is that the remove method raises a Key Error exception whenever a value you are looking for is not actually there, while the discard method will not raise an exception, it will just move on.",4,The alternate symbol is &.,2,Alternate symbol for difference method is -(minus sign). ,2,One difference between the difference and symmetric_difference method is that the difference method is used to identify unique elements in one set while symmetric_difference is used to return a set of elements that are not shared by both set.,4,The Union method is used to combine elements from two set while the intersection method is used to identify common elements between sets. ,4,The alternate symbol is ^.,2,The alternate symbol is | .,2,A frozen set is an immutable set. One distinct feature it offers is that it doesn't allow for modification because it is immutable. ,3,Yes,2,<class 'module'>,2,"
+['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']",1,...,0,"A Script describes a Python file that is meant to be executed directly or on its on,  while a module describes a python file that is meant to be used by other files (scripts). ",4,Python Standard Library is a collection of tools built into a language to accelerate productivity.,2,The __name__ variable is a special Python variable. It is a built-in variable which evaluates to the name of the current module. It can be used to check whether the current script is being run on its own or being imported somewhere else by combining it with if statement.,3,"The key word is as
+E.g.
+Import datetime as dt",4,"The regular Import syntax helps us to import all attributes from a script to a module, while the 'from module import x ' helps us to import only specific attributes and not all attributes from a script. This clearly tells us what was imported.",4,The * syntax tells python to import everything in the script. It doesn't states what exactly is done. Importing all attributes doesn't give a clear picture of what was done. It is vague.,3,"It creates ease in ensuring that after reading the file the file is closed. Using the built in function 'Close', the file might fail to close in a case of faulty code.",3,"The second argument to the open function is mode. We can either read it, write to it or append to it, etc. ",4,"The ""w"" is write while ""a"" is append. For an existing file, write mode 'w' erase the previous data of the file and insert new data while append mode does not erase previous data, it append new data with previous one.",4,"When a file does not exist, the write mode creates that file. ",2,FileNotFound Error exception ,2,Higher order function is a function that either accepts a function as an argument or returns a function as a return value.,2,"You did not return your third declaration.
+return func(a,b)",3,"LEGB - Local, Enclosing functions, Global, Built in Key words",2,A local variable is a variable assigned inside a function while a Global variable is a variable assigned outside any function.,4,A closure describes a programming pattern in which a scope retains access to an enclosing scope's name ,2,The word 'val' was not defined. ,3,The keyword is Global.,2,A decorator is a higher order function that both accepts a function as an input and returns another function as an output.,2,"The *arg and **kwarg helps accepts any number of positional arguments and any number of keyword argument. This is essential for a function to wrap a number of functions. 
+",3,...,0
+84,Samuel Fasanya ,SNP_201177,A set is a mutuable unorderd structure that does not allow for duplicates.,2,"The syntax to create set involves the curly brackets {} with the items or elements separated with comma.
+set={""element1"", ""element2"" }",1,The remove methods will return a KeyError when the item you want cannot be found in the set while the discard method runs without raising any error. Discard method simply moves along without any error. ,4,The alternate symbol for the intersection method is &,2,The alternate symbol for the difference method is -,2,"The difference method outputs a new set that the method is called on but not in the set that is passed as an argument. 
+The symmetric_difference method output a new set of elements that are not shared by the two sets. i.e if the sets are merged the elements that is not in duplicates ",4,"The union method outputs a new set consist of the combination of the elements of two different sets.
+The intersection method returns a new set with elements that are found in the both sets i.e the elements they have in common.",4,The alternate symbol for the symmetric_difference method is ^,2,The alternate symbol for the Union method is |,2,A frozen set is immutable i.e it does not allow for changes. ,3,"Yes  a module can have an attribute with the same name as the module. 
+",3,it will return <class 'module'> stating that it is a module ,2,It will return a list of methods that can be used with the math module ,2,It will return a list of methods that can be used with the calculator module ,2,"A script is a piece of code that can run by itself. 
+A module is a form of library that can be imported into other codes.",4,Python standard library is a collection of  tool already built into the language to help developers and increase productivity. ,2,"The __name__ variable helps us determine if a file is being used as a module or script 
+",2,"The ""as"" keyword can be used to assign an alias. 
+e.g
+import calculator as calc",4,"The regular import syntax import the whole module while 
+""from module import x"" is used to import certain parts of the module. ",4, You have limited access to the resources available in that module ,1,Using this approach helps to close the  file immediately you are done reading or writing into the file.,3,The second argument is read.There is another option for write and append.,4,"""w"" is used to write to file and it replaces any file in that directory with the same file name. 
+""a"" updates the file or add new elements or items to the file.",4,Python will create a new file with the file name given and write into that file.,2,FileNotFoundError,2,A higher function is a function that accepts another function as an argument or returns a function as a value after running the code.,2,"The return keyword is not written to return the func.
+
+def multiply(a, b):
+
+  return a * b
+
+def divide(a, b):
+
+  return a / b
+
+def calculate(func, a, b):
+
+  return func(a, b)
+
+print(calculate(multiply, 10, 5))",3,Local/Enclosing Functions/Global/Built-in,2,"Global variables are usually declared outside a function and they can be used on any function in the program. 
+Local variables are declared inside a function and can be used only inside that function. ",4,A scope is a programming patter in which a scope retains access to an enclosing scope name.,2,"The name val was defined after the print function hence the code got to the print function with no data assigned to the variable and returned an error. 
+The code will work if the val is declared before print. ",0,Global,2,A decorator is an enhancer that can be used to add extra functionalities to a function. ,2,as,0,"def complex_operation():
+
+    for i in range(100000):
+
+        print(i)",0
+84,Chukwunanu John Onyido,SNP_201050,"A set is a mutable, unordered data structure that prohibits duplicate values and which doesn't support indexing.",2,"The syntax to create a set is {}
+",0,The remove method raises a KeyError exception when the argument is not found  but the the discard do nothing,4,The alternative symbol for intersect method is &,2,The alternative symbol for difference method is -,2,Difference method returns new set elements that is present in the set that is called on but not present in the set that is passed in as an argument while the symmetric_difference returns the elements that is not shared by the both set (i.e the none duplicate elements when the two are are combined together),4,The union methods returns all the elements in the both sets while intersect methods returns only the elements that appears in the both sets.,4,The alternative symbol for symmetric_difference method is ^,2,The alternative symbol for union method is |,2,"In frozenset, one cannot add or remove (I.e frozenset is immutable) while regular set is mutable.",3,"Yes, it is valid because when imported in the main.py it becomes a module.",3,It returns Class module.,2,It returns all the functions that the math module can perform.,2,It returns all the functions that the calculator module can perform.,2,A script describes a python file that is meant to execute directly within the scope while a module is a python file that is used by other files in the project.,4,Python standard library is a collection of tools built into a language to accelerate developer's productivity.,2,"It's represent the __main__. It us used to execute the name of the module.
+If a file is being run as a script, it will evaluate as __main__ but if it is run as a module it will evaluate to the name of the module.",3,"The keyword is ""as""
+Example:
+import necessity as nece
+#where necessity is a script.",4,"""from module import x"" syntax different from regular import because it import a specific attributes.",3,"It might be a bad idea to use * because it import everything which is implicit but does not import any attribute that is proceeded with underscore.
+Example
+_necessity = ""John Chu""
+It won't import this kind of attribute.",2,It is recommended because it closes the file first whenever we are done working without calling the function.,3,"The second argument represent the processing mode and the options are: ""r"" for read, ""w"" for write, ""a"" for append.",4,"The ""w"" argument for the open functions processing mode overwrite an existing file but ""a"" append file to an existing file.",4,It will create a new file and start writing on the new file.,2,The exception raised is FileNotFoundError.,2,A higher order function is a function that either accepts a function as an argument or returns a function as a return value.,2,Because there is no return before the func. (I.e the value is not returned),3,LEGB means Local/ Enclosing function/ Global/ Built-in,2,A global variable is a variable that is assigned outside a function while a local variable is a variable that is assigned inside a function (this variable only function within the function).,3,A closure is a programming pattern in which a scope retains access to an enclosing scope's names.,2,Because a() is not returned in the function definition.,0,The python keyword is nonlocal.,0,A decorator is a higher order function that both accepts a function as an input and then returns another function as an output.,2,In other to allow any number of arguments and any form of configuration.,3,"#code that detect how long it took to run a program
+def time_it():
+    fn()
+    print(""The time it took to run the program is"", fn)
+    def complex_operstiom():
+        for i in range (100000):
+            print(i)
+@time_it
+complex_operation()",0
+76,MECHIE Emmanuel Ifeanyi ,SNP_201065,"A Set is an unordered collection data type that is iterable, mutable and has no duplicate elements.",2,"A set is created by placing all the items (elements) inside curly braces {}, separated by comma or by using the built-in function set()",2,"The only difference between the two is that, while using discard() if the item does not exist in the set, it remains unchanged. But remove() will raise an error in such condition.",4,&,2,-,2,"Difference of A and B (A - B) is a set of elements that are only in A but not in B.
+While, Symmetric Difference of A and B is a set of elements in both A and B except those that are common in both.",4,"Union add all elements in both sets A and B while, 
+Intersection of A and B is a set of elements that are common in both sets.",4,^,2,|,2,"Frozen set is just an immutable version of a Python Regular set object. While elements of a set can be modified at any time, elements of frozen set remains the same after creation.",3,Yes but will not end with .py,1,<class int>,0,"returns all properties and methods of the Math module, without the values. This function will return all the properties and methods, even built-in properties",2,"returns all properties and methods of the Calculator module, without the values. This function will return all the properties and methods, even built-in properties",2,"A script is generally a directly executable piece of code, run by itself. A module is generally a library, imported by other pieces of code",4,The Python Standard Library is a collection of script modules accessible to a Python program to simplify the programming process and removing the need to rewrite commonly used commands.,2,__name__ is a built-in variable which evaluates to the name of the current module.,3,"""as"" 
+import math as mt",4,"import module: nice when you are using many bits from the module. drawback is that you'll need to qualify each reference with the module name.
+
+from module import ...: nice that imported items are usable directly without module name prefix. The drawback is that you must list each thing you use, and that it's not clear in code where something came",4,To use a new item from the module you have to update your import statement,0,it ensures that open file descriptors are closed automatically after program execution leave the with statement ,3,"Mode,  ""r"" for read only,  ""w"" for write only, ""a"" for appending ",4,"""w"" overwrite the existing content in the file while the ""a"" append or add to the existing content in the file ",4,It will create a new file in the same directory of the script ,2,FileNotFound error ,2,It's a function that contains other function as parameter or return function as output ,2,The function func() should not be nested inside it function,0,the LEGB is used to decide the order in which the namespaces are to be searched for scope resolution.,0,Local variable is found inside a function while global variable is outside of any function ,4,A Closure is a function object that remembers values in enclosing scopes even if they are not present in memory,2,"Val (global variable should be called before the ""def c()"" that return val",1,var,0,A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure.,2,In a case of many arguments or keywords it's needed ,1,........,0
+58,Abidemi Adeyeye,SNP_201022,"A set is an unordered collection data type that is iterable, mutable and no duplicate elements",2,"A set is created by placing all the items (elements) inside a curly braces{}, separated by comma or by using the built-in function",1,Remove ()  remove the element from the set and if it not contained it raises a KeyError while discard() remove the the element too if it is contained but if not contained does not raise an error,4,& operator,2,#NAME?,2,Difference method is not commutative while symmetric difference is commutative.,0,"The union takes in all the elements in the two sets, Intersection checks for what  is common in the set.
+",4,^ operator,2,| operator,2,Frozen set like setss except that they cannot be changed (i.e immutable),3,No,0,Class (imp),0,Run,0,Run,0,"A script is generally a directly executable piece of code run by itself.
+
+A module is generally a library  imported by itself",3,A python standard library  is a collection of script modules accessible to a python program to simplify the programming process and removing the need to rewrite commonly used commands,2,_name_ is a built in variable which evaluates to the none of the current module. This can be used to check whether the current script is being run on its own or being imported somewhere else by combining it with of statement,3,"as keyword
+
+Import calendar as c
+Print (c.day_name [2])",4,"Reqular import syntax loads a python Module into its own namespace,so that you have to add names followwd by a dog in front, it references to any from the imported Module",4,Using from module you will notice there were a conflict of names ,3,"It allows you to abstract away most of the resource handling logic.
+It can make code dealing with system resources more available.
+",1,What you think,0,"""w"" opens in write only mode while ""a"" opens a file for appending new information to it.",4,It will create a new file,2,KeyError,0,"A function is called higher order function if it contains other functions as a parameter,or returns a function as an output i.e the function that operate with another function are known as higher order function.
+",2,The functions are not well defined,0,"Local, Enclosing, Global and built",2,"A global variable is a variable that is accessible globally.
+A local variable is one that is only accessible  to the current.",3,"A closure is a function objects that remembers values in Enclosing scopes
+Even if they are not present in memory.",2,Variable not defined,0,**,0,A decorator in python is any callable python object that is used to modify a function or a class,1,**,0,Print (,0
+84,Folarin Osuolale,SNP_201078,A mutable u ordered data structure that does not accept duplicate values ,2,set(),2,"Remove gives an error when an element/string that is not present in the set is passed but Discard does not give/pop up an error message, it does nothing when the element is not a member of the set",4,&,2,-,2,"Difference gives the elements that are not found in both i.e. what is different in both,  while Symmetric difference gives the elements found in either of the two sets but not both i.e. that are not common in both",3,Union combines elements of both sets while Intersection gives the elements found in both,4,^,2,|,2,A frozen set is not mutable ,2,"Yes, it can have an attribute with the same name as the module.
+calculator.calculator prints the result of the variable calculator in calculator.py",3,"Reloaded modules: calculator 
+<class 'module'> ",2,It returned all the attributes/properties and methods of the imported math module,2,It returns all the attributes/properties and methods of the imported calculator module,2,A script describes a python file that is to be executed directly while A module is any python file with a .py extension and meant to be used by other files such as script files,4,Python standard library is a collection of in-built python tools to aid and assist developers' productivity and ease,2,It represents dunder name variable used to determine whether a file is used as module or script. It executes the name of the file being used and returns main if it's the primary file i.e. used on its own,3,"The keyword ""import as""
+
+Example: import calculator as cal",4,it is different as it allows to precisely import from a module its module names/variables,2,We might not know all the names/attributes present in the module,2,It is recommended to prevent the code from stopping/not running when a bug pops up. It would close the file whether something goes wrong or not ,3,"It's the processing mode and the options are r,w,a...read more, write mode and append mode ",4,The write argument clears and overwrites the entire content of the file while append arguments adds to the file without overwriting the entire content ,4,It raises an error exception ,0,It pops up a FileNotFoundError,2,A function that accepts a function as an argument or returns it as a return value,2,There's no return in the defined calculate function,3,"Local, Enclosing, Global Built-in functions",2,A local variable is defined within a scope and cannot be called outside of the scope whereas a global variable can be called and used anywhere in the script,4,A programming pattern in which a scope retains access to an enclosing scope's names even if the enclosing scope no longer exists ,2,The variable val was called outside of the scope,2,@,0,A higher order function that both accepts a function as an input and returns another function as an output,2,To prevent the TypeError exemption by allowing it to accept any number of positional arguments and keyword argument,3,  ,0
+51,Akinnayajo Akintayo,SNP_201027,"A set Is a mutable, unordered data structure that prohibits duplicate values",2,set(),2,Remove take out an element existing in set while discard take oh element in a set even if it doesnt exist,0,&,2,-,2,^,0,A union is the combination of two sets while intersection is that element that is found in both set,4,^,2,|,2,A frozenset is immutable,3,Yes,2,Class Module,2,A directory for math function,2,A directory of math function,2,A script is file run while a code that is used by other file is called a module,4,A python standard library is that containing over 250 merger,0,Its a main,0,as,2,It imports specific attributes of the merger,0,because there might be duplicate name and it against the zen of python,2,It gives an equivalent file merger and closes automatically when done,3,"It represent the operation to performed on the first file argument.
+Options include mode, buffering, encoding",2,O idea,0,It automatically closes,0,None,0,Its a function that either accepts a function as argument or returns it as a return value,2,There is no print in the declared calculate function,0,"Local, Enclosing, Global, and Built in scopes",2,A local variable is variable local to the scope of the function while global scope is ,4,A programmin pattern in which scope retains access to an enclosing scopes name,2,Because is a local variable,0,Outer,0,A decorator a syntax Calling a higher order function,0,To avoid type error function,1,No idea,0
+95,Odumije Okonye Ebenezer,SNP_201139,"A set contains an unordered collection of unique and immutable items and it is written with curly braces.
+Example:
+filmset = {""Jumanji"",""Money heist"",""A fall from Grace"",""Bloodshot""}
+",2,"A set is created by placing all the items inside curly braces, separated by comma or by using the python built-in function set().
+Example:
+myset = {1, 2, 3}",2,"remove() will raise an error if the item does not exist in the set, while
+discard() will remain unchanged.",4,"(&)
+Example:
+A = {1, 2, 3}
+B = {3}
+print(A & B)
+#ouput --> {3}",2,"(-)
+Example:
+A = {1, 2, 3}
+B = {3}
+print(A - B)
+#output --> {1, 2}",2,"difference is performed using the (-) operator or the difference() method and it is a set of elements that are in set A but not in set B while,
+symmetric_difference is performed using the (^) operator or the symmetric_difference() method and it is a set of elements in both set A and set B except the common elements.
+Example:
+#difference
+A = {1, 2, 3}
+B = {3, 4, 5}
+print(A - B)
+#ouput --> {1, 2}
+
+#symmetric_difference
+A = {1, 2, 3}
+B = {3, 4, 5}
+print(A ^ B)
+#ouput --> {1, 2, 4, 5}",4,"union is performed using the (|) operator or the union() method and it is a set of elements in both set A and set B while
+intersection is performed using the (&) operator or the intersection() method and it is a set of elements that are common in both set A and set B.
+
+Example:
+#union
+A = {1, 2, 3}
+B = {3, 4, 5}
+print(A | B)
+#output --> {1, 2, 3, 4, 5}
+
+#intersection
+A = {1, 2, 3}
+B = {3, 4, 5}
+print(A & B)
+#output --> {3}",4,"(^)
+
+Example:
+A = {1, 2, 3}
+B = {3, 4, 5}
+print(A ^ B)
+#ouput --> {1, 2, 4, 5}
+",2,"( | )
+
+Example:
+A = {1, 2, 3}
+B = {3, 4, 5}
+print(A | B)
+#output --> {1, 2, 3, 4, 5}
+",2,"immutability; frozenset are immutable while regular sets are mutable
+
+Example:
+#regular set
+states = set([""Lagos"", ""Benin"",""Delta""])
+states.add(""Ogun"")
+states
+set(['Lagos', 'Benin','Delta', 'Ogun'])
+
+#frozenset
+states = set([""Lagos"", ""Benin"",""Delta""])
+states.add(""Ogun"")
+AttributeError: 'frozenset' object has no attribute 'add'",3,"Yes, a module can have an attribute with the same name
+Yes, calculator.calculator is valid to use in main.py",3,class 'module',2,"It returns a list of names of all the attributes, contained in the math module
+Example:
+'cosh', 'degrees', 'sin', 'sqrt'",2,"It returns a list of names of all the attributes, contained in the calculator module
+Example:
+'add', 'subtract', 'divide'",2,"A script is a piece of code primarily intended for execution while
+A module is a piece of code primarily intended for importation.
+",4,The python standard library contains built-in modules that provide access to system functionality and also modules written in Python that provide standardized solutions.,2,"__name__ is a built-in variable which evaluates to the name of the current module. 
+It is used to check if the current script is being run on its own or it's being imported somewhere else.
+Example:
+#file1.py
+if __name__ == ""__main__"": 
+    print ""File1 is being run directly""
+else: 
+    print ""File1 is being imported""
+
+#ouput --> File1 is being run directly
+
+#file2.py
+import File1    
+if __name__ == ""__main__"": 
+    print ""File2 is being run directly""
+else: 
+    print ""File2 is being imported""
+
+#output -->File1 is being imported
+                    File2 is being run directly",3,"the 'as' keyword is used to assign alias to an import.
+Example:
+import numpy as np      #np here is the alias",4,"the from keyword is used to import only the specified section of the module while,
+the import keyword is used to import the full module
+
+Example;
+from datetime import time       #This imports the specified section (time) of the module (datetime)
+import datetime                        #This imports the whole module (datetime)",4,"- Explicit is better than implicit; it tampers with the readability of your code
+- You don't know exactly what module has been imported
+- It messes with the namespace. The imported functions and classes in your own namespace may clash with the functions y",3,"The with context allows for cleaner code and makes handling any unexpected errors easier for you, it also ensures that open file descriptors are closed automatically after program execution leaves the context of the with statement.",3,"The second argument(the mode) to the open function determines how the file is opened
+The available options are;
+opens file in read mode(r),
+opens file in read and write mode(+), 
+opens file in write mode(w), 
+opens file in append mode(a),
+opens file in text mode(t),
+opens file for exclusive creation(x)
+opens file in binary mode(b)",4,"The w (write) argument opens a file for writing and creates a new file if the file does not exist or truncates the file if it exists.
+the a (append) argument opens a file for appending at the end of the file without truncating it  and creates a new file if the file does not exist.",4,Python creates a new file if the file its writing to does not exist,2,KeyError,0,"A higher order function is a function that operates with another function i,e; it contains other functions as parameters and also returns a function as an output.
+
+Example:
+def tupper(text):  
+    return text.upper() 
+
+def greet(func): 
+    greeting = func(""thanks to scholar network program."")  
+    print(greeting)
+
+greet(tupper) 
+
+#ouput --> THANKS TO SCHOLAR NETWORK PROGRAM.",2,"The return statement is missen in the calculate function statement, the code is run but the result isn't returned",3,"L - Local (or function) scope; 
+E - Enclosing (or nonlocal) scope; 
+G - Global (or module) scope; 
+B - Built-in scope; ",2,"Global variables are declared outside a function, and they can be used in any function in the program while,
+Local variables are declared within the function declaration.
+
+Example:
+name = ""Samuel""                  # this is the global variable
+def net():
+    network = ""Scholar program"" # this is the local variable",4,"A closure is a value in the enclosing scope, its remembered even when the variable goes out of scope or the function itself is removed from the current namespace.",2,name val is referenced before definition ,3,global,2,"A decorator allow us to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it and they create a simple syntax for calling higher order functions.
+Exmaple:
+@snp_decorator",2,They are used to unpack arguments wrapped in the function,3,"@time_it
+def complex_operation():
+    for i in range(100000):
+        print(i)        
+complex_operation()",3
+88,Tiamiyu Hamzah,SNP_201189,"Set is another data type that consists of  mutable, iterable,   unique and unordered elements",2,"Curly braces enclosing the elements separated by comma or it can be created using the built-in function "" set()""",2,Both are similar in that they remove the element from a set but the remove raises a KeyError if it is not contained in the set while the discard does not raise any error if it is not contained in the set,4,"The intersection () method is equivalent to the inverted ""u"" i.e A n B",0,"The minus sign ""-""e.g A-B== A.difference(B)",2,"The difference method returns a new set which contains the difference between the two set while
+Symmetric_difference returns a new set which contains a symmetric difference of the two set",4,The union method creates a new set with the distinct elements of all sets and intersection method returns a new set which contains the element that are common to all sets,4,"The alternate symbol is the "" ^"" symbol I.e.  A^B == A.symmetric_difference(B)",2,"The alternate symbol is the ""u"" like symbol e.g A u B== A .union(B)",0,It is  offers the advantage of immutability,3,No,0,It returns the class module ,2,A list of various math operations/ functionalities that are available,2,It returns a list of functionalities available for the calculator module,2,A module is any  Python file with the .py extension .it is a library which imported by other piece of code say ' import calculator' while a script is a piece of code run by itself,4,Python standard library is a collection of in tools built in Python to accelerate developer's productivity.e.g the math module,2,This is a built in variable in Python which returns the name of the current module. It is commonly used to check whether a script is being run on it's own or imported from another file,3,"The as keyword, e.g 
+import numpy as np
+The keyword here used to assign as alias is ""as""",4,"The"" from module import X"" allows names and attributes and functions to be directly imported into the current file
+e.g from calculator import creator, add, subtract
+from mathematics import sqrt",4,"It is a bad idea because if we imagine with a complex problem with a lot of functions, writing out all  the functions on the same line with the ""from import ....""  syntax would make the code look messy and difficult to read",3,"It is recommended because we the regular syntax with the .close () may not run if there are bugs in the code, and may cause data to be lost and the with context automatically deals with closing d file",3,"The second argument represent the processing mode, that is what we intend to do with the file
+The 'r' : which reads to a file and 'w' which writes to a file",4,"The 'w' allows to write a file, it overwrites the existing file while the 'a' appends to the end of the file without overwriting the existing file",4,"It's going to create that file if doesn't exist and write to it the ""text we want to write to the file""",2,A FileNotFoundError is raised,2,A higher order function in Python is a function that either accept a function as an argument or return a function as a value,2,"In the calculate function, the ""func"" is not invoked, to invoke it, we use the return keyword before the ""func"". i.e
+return func(a,b)",3,LEGB stands for Local/Enclosing Functions/Global/Built-in,2,"A local variable is a variable that exists within the body of the function or space while the global variable exists outside the body of the function
+e.g
+var=2 
+def calc():
+       x=4
+       pass
+the ""var"" is a global variable while the ""x"" is a local variable since it exists only within the body of the function",4,A closure describes a programming pattern in which the scope retains access to an enclosing scope's names,2,"the "" val"" exist outside the enclosing function, so once the code runs, the value of "" val""  is not found, a local scope cannot access variable outside the scope",3,nonlocal keyword,0,Decorators are higher order function that takes in a function as argument and returns a function as return value,2,It gives our program flexibility so as to be able to pass as many arguments as we want into our wrapped function and unwrapping them inside our function,3,"from time import time
+def time_it(fn):
+       def wrapper(*args,**kwargs):
+             t1=time()
+              result=fn(*args,**kwargs)
+              t2=time()
+              print (f' took {t2-t1} ms')
+               return result
+        return wrapper
+@time_it
+def complex_operation():
+        for i in range (100000):
+               print(I)
+complex_operation()",3
+73,Olaniyan Oluwabunmi,SNP_201156,"A set is  a mutable, unordered data structure that prohibits duplicate values",2,{},0,"The discard method and the remove method both removes an element from a set.
+ Remove method will trigger an keyerror if the argument provided doesnt exit within the given test while  the discard method doesnt raise an error",4,'&',2,'-',2,"symmetric_difference returns separate element that are not shared(either of the elements but not both)
+difference returns a new set element that are present in the set of the method that is called on but not present in the method that is called upon",4,"intersection method identifies common elements between a set
+the union method combines elements from two sets",4,'^',2,'|',2,"Frozen set is an immutable set, 
+add, subtract, remove e.t.c doesnt exsit on it",3,"import calculator
+print (calculator.calculator)",0,class module,2,"The dir() function returns all properties and methods of the math module, without the values. This function will return all the properties and methods, even built-in properties which are default for math module",2,"The dir() function returns all properties and methods of the calculator (e.g add, subtract), without the values. This function will return all the properties and methods, even built-in properties which are default for the calculator",2,"A script describe a python file that is meant to be executed directly
+a module  describe a python file that is meant to be used by other files",4,aPython standard Library is a collection of tools built into a language to accelerate developer productivity,2,dunder name variable enables us to determin if a file is being used as a module or a script,3,"'as'
+import calculator as calc",4,The only difference between the two statements is what name is bound, import sys binds the name sys to the module (so sys -> sys. ... argv ).,,"For one thing, it pollutes your namespace. ... When you do from my_module import * it means that all functions and class declarations ... are in your 'my_module', you have to go read this module,",,"The obvious approach is to open the file, write the json data to the file, and close it. This simple intuitive approach was good only till there were no exceptions. ... throwing your code into try-except block looks ugly most of the times and the better and beautiful alternative is to use context-manager.",, The first argument of open is the filename. The second one (the *mode*) determines *how* the file gets opened.,,w+ : Opens a file for writing and reading. ... A new file is created if one with the same name doesn't exist. ab : Opens a file for appending in binary mode. a+ : Opens a file for both appending and reading,," The arguments that the function can receive are as follows: ... a file for reading and writing, placing the pointer at the beginning of the file. w : Opens in ... doesn't exist. wb : Opens a write-only file in binary mode. w+ : Opens a file for writing",,KeyError,,a higher order function is one that either accepts a function as an argument or returns a function as a return value,,"the calculate function was design to return value
+
+
+edit the code by writing this way
+
+def calculate(func, a, b):
+     retuen func(a,b)",,"Local, Enclosing, Global, and Built
+",,"Global variables are declared outside any function, and they can be accessed (used) on any function in the program. Local variables are declared inside a function, and can be used only inside that function. It is possible to have local variables with the same name in different functions.",," closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.",,"since python reads code line by line, the variable was suppose to be declared before the functions or within the funxtions. the code below is a better way of writing it.
+
+
+
+val = ""Hello""
+def a():
+
+  def b():
+
+    def c():
+
+      return val
+
+    return c()
+
+  return b()
+
+
+
+print(a())
+
+",,"Global versus local Variables, i.e. when and how to use global and local variables ... So when you define variables inside a function definition, they are local to this ... on other variables outside of the function, even if they have the same name. ... variable, we have to explicitly state this by using the keyword ""global"",",,"A decorator in Python is any callable Python object that is used to modify a function or a class. A reference to a function ""func"" or a class ""C"" is passed to a decorator and the decorator returns a modified function or class.",,"Both *args and **kwargs allow you to pass a variable number of arguments to a function. ... def blank_check(*args, **kwargs): for arg in args: print(""Arg: ... Decorators are, basically, functions that wrap other functions.",,no idea
+76,"Osuagwu, Emmanuel Ugochukwu",SNP_201067,"It is a mutable, unordered data structure that prohibits duplicate values",2,{},0,The remove method raises a key error exception if the value you are looking for is not actually there while the discard method will not show the exception it will just move on,4,&,2,-,2,Difference method returns a new set element that are present in the set that the method is called on but now present in the set that is passed in as an argument while the symmetric difference method returns a set of elements that are not shared by both sets.,4,The union method will give a new set that combines all the elements of two sets while the intersection method returns a third set with elements found in both sets.,4,^,2,|,2,It offers immutability,3,"Yes 
+",2,Script,0,Return all mathematical relationships in python,0,Mathematical relationships,0,A script represents a python file that is meant to be interpreted directly while a module describe a python file that is meant to be used by other files.,2,It is a collection of tools built into Python to accelerate developer productivity.,2,It is a special variable use to determine whether a file is being used as a script or a module.,2,"The keyword is ""as""
+
+Syntax;
+Import calculator as calc
+print(calc.add(3, 5))
+
+Output;
+8",4,"The difference is in the syntax, the from module syntax includes the needed attributes in the first line while the regular import syntax includes the needed attributes in the following lines.",2,It is highly discouraged because it increases the chances of name collision which is a situation where there are 2 names that can refer to different things in your program.,3,It provides the leverage of closing files properly as it automatically closes the file when you're done. Hence no need to use the .close() method.,3,"It represents the task that should be done. Available options include read (r), write (w), append (a).",4,The w argument is used to write to a brand new text file while a argument is used to add on to the existing information in a file.,4,Python will create it.,2,File name does not exist error.,2,This is a function that either accepts a function as an argument or returns a function as a return value.,2,No return value,1,"Local, Enclosing Functions, Global, Built-in",2,Local variables are variables that are defined inside of a function while global variables are variables created outside all of your functions.,4,It describes a programming pattern in which a scope retains access to an enclosing scopes names even if the enclosing scope no longer exists ,2,Due to the position of the return val,3,Global keyword,2,It is a higher order function that both accepts a function as an input and then returns another function as an output.,2,It should be done in case there is need to repeat a similar output for consecutive times.,1,"def complex_operation():
+       for i in range(100000):
+       print(i)
+return complex_operation",0
+96,Olawale Micheal Juwon,SNP_201151,"Set is a mutable un-ordered data structures that doesn't accept a duplicate element.
+It is unique and it's uniqueness makes it to be more beneficial.
+When a set is assigned and the element existing is re-assigned
+Set would wipe of the first assigned value and take the new value, thus making it's content unique.
+example: print({2, 3, 45}) returns a set of {2, 3, 45}",2,"Like dictionary the syntax for creating set is {}
+But it doesn't have a key-value pair as dictionary does.
+Example is mic = {""Juwon""}
+set() can also be called in order to create a set",2,"When remove is used and the value is not found it raise a Key Error
+ e.g  
+mic =  {2, 3, 45}
+mic.remove(6)
+    
+But
+
+Discard doesn't raise an error when the argument is not in the set(It does nothing)
+e.g mic =  {2, 3, 45}
+mic.discard(6)
+would not raise any error",4,"& is the alternate symbol that can be use instead of the intersection method
+e.g
+mic =  {2, 3, 45}
+mikel = {2, 4, 9}
+print(mic & mikel)
+
+will return {2}",2,"- (minus) is the alternate symbol for the difference method
+e.g
+mic =  {2, 3, 45}
+mikel = {2, 4, 9}
+print(mic - mikel)
+returns {3, 45}",2,"The difference method  evaluates to the content(elements) in the first set but are not present in the second set
+BUT
+The symmetric_method evaluates to content(elements) in the first and second set that are not present(shared) in both set
+for instance
+mic =  {2, 3, 45}
+mikel = {2, 4, 9}
+print(mic.difference(mikel))
+returns {3, 45}
+mic =  {2, 3, 45}
+mikel = {2, 4, 9}
+print(mic.symmetric_difference(mikel))
+returns {3, 4, 9, 45}",4,"The union method returns set combination of all elements in both sets (without repeating elements.)
+e.g mic =  {2, 3, 45}
+mikel = {2, 4, 9}
+print(mic.union(mikel))
+returns {2, 3, 4, 9, 45}
+But
+The intersection method returns set of the element present (found) in both sets.
+e.g
+mic =  {2, 3, 45}
+mikel = {2, 4, 9}
+print(mic.intersection(mikel))
+returns {2}",4,"^ is the alternate symbol for the symmetric_difference method
+e.g mic =  {2, 3, 45}
+mikel = {2, 4, 9}
+print(mic ^ mikel) returns the symmetric difference",2,"| is the alternate symbol for the union method
+e.g 
+mic =  {2, 3, 45}
+mikel = {2, 4, 9}
+print(mic | mikel)
+returns the uninon of both sets",2,"Frozen set makes a set immutable i.e unchangeable
+It offers usefulness as immutable data structure. For instance
+Dictionary key can only be immutable data structure so a regular set can't be used for key in dictionary because it's mutable
+But
+A FROZEN SET can be use as a key in a dictionary because it's immutable,never change (frozen)",3,"Yes! a module can have an attribute with the same name as the module but it can only be used as a script.
+Declaring a variable called ​calculator​ in ​calculator.py​calculator.calculator is not​ valid to be  use  as a module in other file( ​main.py​) it result in attribute error",3,"it returns <class 'module'>. So module belongs to the data type module
+e.g import calculator as calc
+print(type(calc)) returns <class 'module'>",2,"it returns a list of attributes(including __ donders, the functions defined etc.) the math module has  but not shown in the terminal  except when printed.
+e.g import math
+dir(math)
+print(dir(math))
+returns all attribute of math.
+heres the list ['__doc__', '__loader__', '__name__', '__package__', '__spec__',
+'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+",2,It returns a list of the attributes in the calculator module and the built in donder ,2,"A script is a file to be executed directly
+But
+Module is a file to be run in other file
+
+
+Also
+Script function are called
+But
+Function in an imported module are used as attribute
+ALSO
+The __name__ in a script run as a script gives  __main__
+BUT
+The __name__ in a script run as a module gives the module name  ",3,"Python Standard Library is combination or collection of modules or tools built into python to improve(revamp) developer output. They are things built so that developers don't have to build them again
+example include string module, math module and others",2,"It represent an attribute that is defined by python and it restores ta module name
+It is use for determining whether a file is being used as module or as a script
+Printing __name__ in a script run as a script returns  __main__
+Printing __name__ in a script run as a module returns the module name  ",3,"The as keyword is used as an alias for an import
+And it helps  stress free of using imported module 
+e g import calculator as calc
+import pandas as pd
+import numpy as np",4,"Is different because it is specific, it is flexible you can use it to import everything in the module using * or a specific attribute needed by specifying.
+It makes the import to be used not as an attribute
+e.g from math import  sqrt
+only import the sqrt attribute
+so something like sqrt(3) can be run
+BUT
+import
+automatically import all content in the module  as attributes
+e.g import math
+math.sqrt(3)
+the attribute sqrt has been imported
+",4,"It might be a bad idea because
+1.It result in a name collision(When two names can refer to two different things)
+2. It causes confusion
+3.It makes the code looks ambiguous",3,"It's recommended because it closes the file immediately the block has finished executing
+It doesn't fail if there's a faulty code elsewhere and gives no worry of thinking whether the file has been closed or not.
+",3,"The second argument of open function depicts what the file will be used for i.e the processing
+e.g if the file is to be read it is given ""r""
+If to write It's to be given ""w""
+If to append it's to be given ""a""
+So available options area ""r"",""w"",""a"" if none given it assumes ""r""(read)",4,"""w"" (write) will create a file and write into it if it doesn't exist
+But
+""a"" (append) will create a file and add to it if it doesn't exist
+
+""w"" (write) will over-write an existing file
+But
+""a"" (append) will add to an existing file",4,"Python will create a file with the given name in the same folder the python file is situated and it will write into it
+But when used again it will over-write",2,"It raised the FileNotFoundError
+When the file is not in the directory the file is situated",2,"higher order function is a function that either accepts a function as an argument or returns a function as a return value
+
+This is possible because function is also an object as everything in python is an object",2,"Because calculate has no return value
+The right code should be
+def multiply(a, b):
+  return a * b
+def divide(a, b):
+  return a / b
+def calculate(func, a, b):
+  return func(a, b)
+print(calculate(multiply, 10, 5))",3,"LEGB - Local/ Enclosing Functions/Global/Built-in
+It represent how python make use of assigned data structure in scope. Local is of higher priority and Built in is the lowest. Priority decreases through LEGB",2,"Local variable represent defined inside a block or variable declared inside block of the enclosure
+It is only used within the block.
+nonlocal keyword can used inside a body of nested function to make the desire not local
+But
+Global variable is a variable declared outside a block, it is usually at column 1.
+It can be used in anywhere even inside a block.
+The global keyword can be used to make a variable in  a local block global
+
+Local variable has higher order than global when running a program",4,"closure is a programming pattern in which a scope retains access to an enclosing scope's names
+For LEGB it is use in E - The enclosure",2,"It will raise NameError Because function a is called before definition(assigbing, declaration or referencing) of val.
+There are two solution approach to this, is either the val is declared before the function definition
+or 
+a should be called after the declaration of val
+Check the solution below
+def a():
+
+  def b():
+
+    def c():
+
+      return val
+
+    return c()
+
+  return b()
+
+
+
+
+
+val = ""Hello""
+print(a())
+
+
+or
+
+
+val = ""Hello""
+def a():
+
+  def b():
+
+    def c():
+
+      return val
+
+    return c()
+
+  return b()
+
+
+print(a())",3,"*args and / or **kwargs
+also  _ can be use for a variable that is not to be exported",0,"A decorator in python takes function as input and output function as its output
+
+A decorator enhances a function with another features  without changing the functionality of the function",2,"So Error won't arise when using a decorator
+
+So that the argument can be flexible it can take positional argument saved as tuple in *args and/ or keyword argument saved as dictionary in **kwargs
+
+And that the function can make use of any function called",3,"@time_it
+def complex_operation():
+    for i in range(100000):
+        print(i)
+complex_operation()",5
